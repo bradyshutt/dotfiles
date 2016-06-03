@@ -6,6 +6,7 @@ PATH=/bin:/usr/bin
 [ -d ~/bin ] && PATH=~/bin:$PATH
 [ -d /usr/local/bin ] && PATH=$PATH:/usr/local/bin
 [ -d /usr/share/bin ] && PATH=$PATH:/usr/share/bin
+#PATH=$PATH:.
 export PATH
 
 MANPATH=/usr/share/man
@@ -32,10 +33,16 @@ shopt -s checkwinsize
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 color_prompt=yes
-TERM=xterm-256color
+if [[ $TERM != "screen-256color" ]] ; then 
+   TERM=xterm-256color
+fi
 PAGER=less
 EDITOR=vim
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+#export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+#export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:-\[\033[01;34m\]\W\[\033[00m\] \$ '
+export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]-\W\[\033[00m\] \$ '
+#\[$(tput sgr0)\]\[\033[38;5;4m\]-\[$(tput sgr0)\]\[\033[38;5;27m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\]
+#export PS1=": ..\[$(tput sgr0)\]\[\033[38;5;4m\]-\[$(tput sgr0)\]\[\033[38;5;27m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \\$\[$(tput sgr0)\]"
 
 #ALIASES ================================================
 
@@ -51,3 +58,9 @@ alias ll="ls -al"
 alias l="ls -l"
 alias cl="clear && ls"
 alias cll="clear && ll"
+
+alias br="brightness"
+
+alias q="exit"
+
+

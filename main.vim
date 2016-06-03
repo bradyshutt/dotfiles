@@ -2,10 +2,14 @@
 hi clear
 
 set background=dark
+set colorcolumn=80 
 let g:colors_name="main"
 
 let g:indentLine_char='┆'
-let g:indentLine_color_term = 236 
+let g:indentLine_color_term=237
+
+highlight multiple_cursors_cursor term=reverse cterm=reverse gui=reverse
+highlight link multiple_cursors_visual Visual
 
 hi Boolean         ctermfg=135
 hi Character       ctermfg=144
@@ -19,8 +23,9 @@ hi Define          ctermfg=81
 hi Delimiter       ctermfg=241
 hi Builtin         ctermfg=135               cterm=bold
 
+hi Tab gui=underline guifg=blue ctermbg=blue
 hi EasyMotionTarget ctermfg=11
-hi EasyMotionShade  ctermfg=8
+hi EasyMotionShade  ctermfg=232
 
 hi DiffAdd                     ctermbg=24
 hi DiffChange      ctermfg=181 ctermbg=239
@@ -32,8 +37,8 @@ hi Error           ctermfg=219 ctermbg=89
 hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
 hi Exception       ctermfg=118               cterm=bold
 hi Float           ctermfg=135
-hi FoldColumn      ctermfg=67  ctermbg=233
-hi Folded          ctermfg=67  ctermbg=233
+hi FoldColumn      ctermfg=67  ctermbg=234
+hi Folded          ctermfg=67  ctermbg=234
 hi Function        ctermfg=118
 hi Identifier      ctermfg=208
 hi Ignore          ctermfg=244 ctermbg=232
@@ -78,8 +83,7 @@ hi Search          ctermfg=253 ctermbg=66
 
 hi SignColumn      ctermfg=118 ctermbg=235
 hi SpecialChar     ctermfg=161               cterm=bold
-hi SpecialComment  ctermfg=245               cterm=bold
-hi Special         ctermfg=81  ctermbg=232
+hi Special         ctermfg=81  ctermbg=234 cterm=bold
 hi SpecialKey      ctermfg=245
 
 hi Statement       ctermfg=161               cterm=bold
@@ -92,7 +96,8 @@ hi Title           ctermfg=166
 hi Todo            ctermfg=231 ctermbg=232   cterm=bold
 
 hi Typedef         ctermfg=81
-hi Type            ctermfg=81                cterm=none
+"hi Type            ctermfg=81                cterm=none
+hi Type            ctermfg=214                cterm=none
 hi Underlined      ctermfg=244               cterm=underline
 
 hi InheritUnderlined      ctermfg=118               cterm=underline
@@ -103,14 +108,19 @@ hi Visual                      ctermbg=235
 hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
 hi WildMenu        ctermfg=81  ctermbg=16
 
-hi Normal          ctermfg=252 ctermbg=233
-hi Comment         ctermfg=59
-hi CursorLine                  ctermbg=234   cterm=none
-hi CursorColumn                ctermbg=234
-hi ColorColumn                 ctermbg=234
-hi LineNr          ctermfg=250 ctermbg=233
-hi NonText         ctermfg=240 ctermbg=233
+hi Normal          ctermfg=252 ctermbg=234
+"hi Normal          ctermfg=252 ctermbg=234
 
-highlight Comment cterm=bold
+hi Comment         ctermfg=240   cterm=standout
+hi SpecialComment  ctermfg=245   cterm=bold
+hi CursorLine      ctermbg=235   cterm=none
+hi CursorColumn                  ctermbg=235 
+hi ColorColumn                   ctermbg=88
+hi LineNr          ctermfg=250   ctermbg=234
+hi NonText         ctermfg=240   ctermbg=234
+
+
+
 hi Visual term=reverse cterm=reverse guibg=Grey
 
+set cursorcolumn
