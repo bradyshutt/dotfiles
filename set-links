@@ -12,6 +12,8 @@ PROMT="Would you like to overwrite"
 #    fi
 # fi
 
+mkdir -p ~/dotfiles/old/
+
 if [ -a ~/.vimrc ] ; then mv ~/.vimrc $OLD ; fi
 ln -sf $FILES/.vimrc ~
 
