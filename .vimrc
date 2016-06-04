@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 
+
 "-- PLUGINS
 Plugin 'VundleVim/Vundle.vim'             "Vundle manages Vundle
 Plugin 'christoomey/vim-tmux-navigator'
