@@ -29,5 +29,9 @@ mkdir -p "~/.vim/autoload/"
 mv "~/.vim/autoload/" $OLD
 ln -sf "$FILES/vim-autoload" "~/.vim/autoload/"
 
+mkdir -p "~/bin/"
+if [ -a ~/bin/editvimrc ] ; then mv ~/bin/editvimrc $OLD ; fi
+ln -sf $FILES/bin-editvimrc ~/bin/editvimrc
+
 source ~/.bashrc
 

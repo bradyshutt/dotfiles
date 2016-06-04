@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+CUR_DIR=$(pwd)
+GIT_DIR="/home/brady/dotfiles"
+
+vim ~/.vimrc
+echo "Would you like to commit and push this edit?" 
+read CHAR
+
+if [[ $CHAR == y ]]; then
+   cd $GIT_DIR
+   echo "What change did you make?" 
+   read MSG
+   git add .
+   git commit -m "$MSG"
+   git push
+   cd $CUR_DIR
+else
+   echo "Not committing changes."
+fi
+
