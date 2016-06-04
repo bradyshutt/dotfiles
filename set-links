@@ -1,0 +1,33 @@
+#!/bin/bash
+
+FILES="~/dotfiles/files"
+OLD="~/dotfiles/.old-files"
+PROMT="Would you like to overwrite"
+
+# if [ -a ~/.vimrc ]; then 
+#    echo "$PROMPT .vimrc?"
+#    read ANS
+#    if [[ $ANS == y ]]; then 
+#       mv ~/.vimrc $OLD
+#    fi
+# fi
+
+if [ -a ~/.vimrc ] ; then mv ~/.vimrc $OLD ; fi
+ln -sf $FILES/.vimrc ~
+
+if [ -a ~/.bashrc ] ; then mv ~/.bashrc $OLD ; fi
+ln -sf $FILES/.bashrc ~
+
+if [ -a ~/.tmux.conf ] ; then mv ~/.tmux.conf $OLD ; fi
+ln -sf $FILES/.tmux.conf ~
+
+mkdir -p ~/.vim/colors/ 
+mv ~/.vim/colors/ $OLD
+ln -sf $FILES/vim-colors/ ~/.vim/colors/
+
+mkdir -p "~/.vim/autoload/"
+mv "~/.vim/autoload/" $OLD
+ln -sf "$FILES/vim-autoload" "~/.vim/autoload/"
+
+source ~/.bashrc
+
