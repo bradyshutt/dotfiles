@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FILES="~/dotfiles/files"
-OLD="~/dotfiles/.old-files"
+FILES="/home/brady/dotfiles/files"
+OLD="/home/brady/dotfiles/.old-files/"
 PROMT="Would you like to overwrite"
 
 # if [ -a ~/.vimrc ]; then 
@@ -12,28 +12,26 @@ PROMT="Would you like to overwrite"
 #    fi
 # fi
 
-mkdir -p ~/dotfiles/old/
+mkdir -p $OLD
 
-if [ -a ~/.vimrc ] ; then mv ~/.vimrc $OLD ; fi
-ln -sf $FILES/.vimrc ~
+if [[ -a ~/.vimrc ]] ; then mv ~/.vimrc $OLD ; fi
+ln -sf $FILES/.vimrc ../.vimrc
 
-if [ -a ~/.bashrc ] ; then mv ~/.bashrc $OLD ; fi
-ln -sf $FILES/.bashrc ~
+if [[ -a ~/.bashrc ]] ; then mv ~/.bashrc $OLD ; fi
+ln -sf $FILES/.bashrc ../.bashrc
 
-if [ -a ~/.tmux.conf ] ; then mv ~/.tmux.conf $OLD ; fi
-ln -sf $FILES/.tmux.conf ~
+if [[ -a ~/.tmux.conf ]] ; then mv ~/.tmux.conf $OLD ; fi
+ln -sf $FILES/.tmux.conf ../.tmux.conf
 
-mkdir -p ~/.vim/colors/ 
-mv ~/.vim/colors/ $OLD
-ln -sf $FILES/vim-colors/ ~/.vim/colors/
+if [[ -d ~/.vim/colors ]] ; then mv ~/.vim/colors/ $OLD ; fi
+ln -sf $FILES/vim-colors/ ../.vim/colors/
 
-mkdir -p "~/.vim/autoload/"
-mv "~/.vim/autoload/" $OLD
-ln -sf "$FILES/vim-autoload" "~/.vim/autoload/"
+if [[ -d ~/.vim/autoload ]] ; then mv ~/.vim/autoload/ $OLD ; fi
+ln -sf "$FILES/vim-autoload" "../.vim/autoload/"
 
 mkdir -p "~/bin/"
-if [ -a ~/bin/editvimrc ] ; then mv ~/bin/editvimrc $OLD ; fi
-ln -sf $FILES/bin-editvimrc ~/bin/editvimrc
+if [[ -a ~/bin/editvimrc ]] ; then mv ~/bin/editvimrc $OLD ; fi
+ln -sf $FILES/bin-editvimrc ../bin/editvimrc
 
 source ~/.bashrc
 
