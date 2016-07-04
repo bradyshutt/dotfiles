@@ -17,8 +17,14 @@ mkdir -p $OLD
 if [[ -a ~/.vimrc ]] ; then mv ~/.vimrc $OLD ; fi
 ln -sf $FILES/.vimrc ../.vimrc
 
+if [[ -a ~/.zshrc ]] ; then mv ~/.zshrc $OLD ; fi
+ln -sf $FILES/.zshrc ../.zshrc
+
 if [[ -a ~/.bashrc ]] ; then mv ~/.bashrc $OLD ; fi
 ln -sf $FILES/.bashrc ../.bashrc
+
+if [[ -a ~/.aliases ]] ; then mv ~/.aliases $OLD ; fi
+ln -sf $FILES/.aliases ../.aliases
 
 if [[ -a ~/.tmux.conf ]] ; then mv ~/.tmux.conf $OLD ; fi
 ln -sf $FILES/.tmux.conf ../.tmux.conf

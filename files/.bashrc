@@ -46,21 +46,5 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]-\W\[\033[00m\] \$ '
 
 #ALIASES ================================================
 
-alias h="history | $PAGER"
-alias ls="ls --color=auto"
-alias dir="dir --color=auto"
-alias vdir="vdir --color=auto"
-alias grep="grep --color=auto"
-alias fgrep="fgrep --color=auto"
-alias egrep="egrep --color=auto"
-
-alias ll="ls -al"
-alias l="ls -l"
-alias cl="clear && ls"
-alias cll="clear && ll"
-
-alias br="brightness"
-
-alias q="exit"
 
 

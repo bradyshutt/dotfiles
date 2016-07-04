@@ -3,12 +3,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
-
-
-
-
-
 "-- PLUGINS
 Plugin 'VundleVim/Vundle.vim'             "Vundle manages Vundle
 Plugin 'christoomey/vim-tmux-navigator'
@@ -32,7 +26,11 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'reedes/vim-pencil'
 Plugin 'benmills/vimux' 
 Plugin 'Yggdroot/indentLine'
+Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
 
+"https://github.com/.git
+"Plugin 'mickaobrien/vim-stackoverflow'
 "Plugin 'repeat-motion'
 " Plugin 'haya14busa/incsearch.vim'       "Better Inc Search
 " Plugin 'ervandew/supertab'
@@ -57,11 +55,21 @@ command! -nargs=1 IncFile :normal mZggJO#include <f-args><esc>i.h<esc>gmZ
 
 "AUTOCMDs 
 "VIMUX COMMANDS
-nnoremap <C-g><C-t> :call VimuxRunCommand("./vimuxrun.sh")<CR>
+nnoremap <C-g><C-t> :call VimuxRunCommand("./run")<CR>
+
+"map <silent> w <Plug>CamelCaseMotion_w
+"map <silent> b <Plug>CamelCaseMotion_b
+"map <silent> e <Plug>CamelCaseMotion_e
+"map <silent> ge <Plug>CamelCaseMotion_ge
+"sunmap w
+"sunmap b
+"sunmap e
+"sunmap ge
+"
 
 "GENERAL Settings
 nnoremap ? ,
-let mapleader=","	" changes the leader key
+let mapleader="," " changes the leader key
 set number			" show line numbers
 set rnu			   " show relative line numbers
 set cursorline		" show horizontal line
@@ -127,6 +135,9 @@ let g:multi_cursor_exit_from_normal_mode =0
 let g:multi_cursor_quit_key=';'
 let g:multi_cursor_insert_maps ={'j':1}
 
+let g:VimuxOrientation = "h"
+let g:VimuxHeight = "37"
+
 " KEYBINDINGS
 " General Keybindings
 noremap ; :
@@ -142,8 +153,10 @@ inoremap ` <esc><right>a
 "nnoremap <Leader>fn i#>>  #<<<ESC>bDi
 nnoremap M J
 nnoremap gM :Man <cword><CR>
-noremap <silent> J :keepjumps normal }<CR>
-noremap <silent> K :keepjumps normal {<CR>
+noremap <silent> J 5j
+noremap <silent> K 5k
+"noremap <silent> J :keepjumps normal }<CR>
+"noremap <silent> K :keepjumps normal {<CR>
 vnoremap J }
 vnoremap K {
 noremap W $
@@ -152,9 +165,13 @@ nnoremap gm `
 
 
 " Script Keybindings 
-nnoremap <Leader>r :call VimuxRunCommand("!!")<CR>
+"nnoremap <Leader>r :call VimuxRunCommand("!!")<CR>
+nnoremap <Leader>R :call VimuxRunCommand("rhino todo.js")<CR>
+nnoremap <Leader>r :call VimuxRunCommand("./run")<CR>
+nnoremap <Leader>c :VimuxCloseRunner<CR>
 "nnoremap <Leader>r :call VimuxRunCommand("./vimuxrun.sh")<CR>
-nnoremap <Leader>rt :RunThisCFile<CR>
+
+"nnoremap <Leader>rt :RunThisCFile<CR>
 nnoremap <Leader>T :TagbarOpen<CR>
 nnoremap <Leader>u :GundoToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
@@ -170,20 +187,26 @@ nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 nnoremap <Leader>ve :vs ~/.vimrc<CR>
 nnoremap <Leader>vu :so ~/.vimrc<CR>
 nnoremap <Leader>vce :vs ~/.vim/colors/main.vim<CR>
-nnoremap <Leader>sce :vs ~/.vim/bundle/vim-snippets/snippets/c.snippets<CR>
-nnoremap <Leader>scppe :vs ~/.vim/bundle/vim-snippets/snippets/cpp.snippets<CR>
+nnoremap <Leader>sc :vs ~/.vim/bundle/vim-snippets/snippets/c.snippets<CR>
+nnoremap <Leader>scpp :vs ~/.vim/bundle/vim-snippets/snippets/cpp.snippets<CR>
+nnoremap <Leader>sjs :vs ~/.vim/bundle/vim-snippets/snippets/javascript/javascript.snippets<CR>
+nnoremap <Leader>shtml :vs ~/.vim/bundle/vim-snippets/snippets/html.snippets<CR>
 nnoremap <Leader>se :vs ~/.vim/bundle/vim-snippets/snippets/_.snippets<CR> 
-map <Leader>w <Plug>(easymotion-w)
-map <Leader>b <Plug>(easymotion-b)
-map <Leader>s <Plug>(easymotion-s)
+"map <Leader>w <Plug>(easymotion-w)
+"map <Leader>b <Plug>(easymotion-b)
+"map <Leader>s <Plug>(easymotion-s)
 map <Leader>f <Plug>(easymotion-s)
 
 map / <Plug>(easymotion-sn)
 map n <Plug>(easymotion-next)
 sunmap n
 map N <Plug>(easymotion-prev)
-map <Leader><space> <Plug>(easymotion-s2)
-map <space><space> <Plug>(easymotion-s2)
+map <Leader><space> <Plug>(easymotion-s)
+"i;w noremap ` <esc><right>a
+inoremap <C-H> <esc>i
+inoremap <C-J> <esc>bi
+inoremap <C-K> <esc>ea
+inoremap <C-L> <esc><right>a
 
 "
 " Splits
@@ -223,3 +246,18 @@ nnoremap gT :!ctags -R . <CR><CR>
 
 nnoremap <leader><c-p> :CtrlP<CR>
 nnoremap <c-p> :CtrlPBuffer<CR>
+
+nnoremap zm zM
+call camelcasemotion#CreateMotionMappings('<leader>')
+
+imap <Leader>\ <space><esc>;set paste<CR>s\<esc>;set nopaste<CR>a
+imap <Leader>` <space><esc>;set paste<CR>s`<esc>;set nopaste<CR>a
+imap <tab> <Plug>snipMateNextOrTrigger
+imap \ <Plug>snipMateTrigger
+smap \ <Plug>snipMateTrigger
+ 
+let g:snipMate = {}
+let g:snipMate['no_match_completion_feedback_chars']=''
+let g:notes_directories = ['~/dev/notes']
+let g:notes_conceal_code = 0
+
