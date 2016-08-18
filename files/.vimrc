@@ -32,6 +32,7 @@ Plugin 'JulesWang/css.vim'
 
 Bundle 'https://github.com/gorodinskiy/vim-coloresque.git'
 Plugin 'https://github.com/hail2u/vim-css3-syntax.git'
+Plugin 'JulesWang/css.vim'
 Plugin 'groenewege/vim-less'
 
 
