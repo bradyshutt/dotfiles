@@ -17,8 +17,8 @@ Plugin 'MarcWeber/vim-addon-mw-utils'     "For Snipmate
 Plugin 'tomtom/tlib_vim'                  "For Snipmate
 Plugin 'garbas/vim-snipmate'              "For Snipmate
 Plugin 'honza/vim-snippets'               "For Snipmate
-Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround' 
+Plugin 'scrooloose/syntastic'
 Plugin 'bkad/CamelCaseMotion' 
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
@@ -28,6 +28,13 @@ Plugin 'benmills/vimux'
 Plugin 'Yggdroot/indentLine'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'JulesWang/css.vim'
+
+Bundle 'https://github.com/gorodinskiy/vim-coloresque.git'
+Plugin 'https://github.com/hail2u/vim-css3-syntax.git'
+Plugin 'groenewege/vim-less'
+
+
 
 "https://github.com/.git
 "Plugin 'mickaobrien/vim-stackoverflow'
@@ -37,7 +44,6 @@ Plugin 'jelera/vim-javascript-syntax'
 " Plugin 'jgdavey/tslime.vim' 
 " Plugin 'vim-scripts/argtextobj.vim' 
 "Plugin 'repeat-motion'
-
 
 call vundle#end()
 filetype plugin indent on
@@ -51,21 +57,19 @@ command! RunThisCFile :!clear && gcc % && ./a.out  && echo " " && echo "========
 command! MvIncUp :normal mZddggJP,<....gmZk
 command! -nargs=1 IncLibrary :normal mZggJO#include <<f-args>><esc>F"s.h<esc>LxgmZ
 command! -nargs=1 IncFile :normal mZggJO#include <f-args><esc>i.h<esc>gmZ
+command! Snippets :vs /home/brady/.vim/bundle/vim-snippets/snippets/.
+command! -nargs=1 Snip :vs /home/brady/.vim/bundle/vim-snippets/snippets/<args>.snippets
+
 "command! AddInc :normal mZi#include <<esc>ea.h><esc>ddggJP,<....gmZkn
 
 "AUTOCMDs 
+autocmd BufRead,BufNewFile *.note set filetype=notes
+"autocmd BufRead,BufNewFile *.less set filetype=css
+
 "VIMUX COMMANDS
+"
 nnoremap <C-g><C-t> :call VimuxRunCommand("./run")<CR>
 
-"map <silent> w <Plug>CamelCaseMotion_w
-"map <silent> b <Plug>CamelCaseMotion_b
-"map <silent> e <Plug>CamelCaseMotion_e
-"map <silent> ge <Plug>CamelCaseMotion_ge
-"sunmap w
-"sunmap b
-"sunmap e
-"sunmap ge
-"
 
 "GENERAL Settings
 nnoremap ? ,
@@ -78,7 +82,7 @@ set listchars=eol:-
 set splitbelow
 set splitright
 set nowrap
-let g:indentLine_char='┆'
+let g:indentLine_char='.'
 colorscheme main
 set colorcolumn=81
 syntax match Tab /\t/
@@ -89,8 +93,8 @@ set ic				" sets ignore case for search
 " k 
 
 "TAB ALIGNMENT SETTINGS 
-set tabstop=3		" set tab size
-set shiftwidth=3
+set tabstop=2		" set tab size
+set shiftwidth=2
 set expandtab
 
 "Fold Settings 
@@ -119,12 +123,18 @@ let g:EasyMotion_enter_jump_first=1
 let g:EasyMotion_space_jump_first=1
 
 " Syntastic Settings
+let g:syntastic_javascript_checkers = ['standard']
 let g:syntastic_auto_jump = 0
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-let g:syntastic_quiet_messages = { "level": "warnings"}
+let g:syntastic_mode_map = {
+      \ "mode": "passive",
+      \ "active_filetypes": [],
+      \ "passive_filetypes": [] 
+      \ }
+"let g:syntastic_quiet_messages = { "level": "warnings"}
 
 " TMUX Settings
 let g:tmux_navigator_no_mappings=1
@@ -165,16 +175,16 @@ nnoremap gm `
 
 
 " Script Keybindings 
-"nnoremap <Leader>r :call VimuxRunCommand("!!")<CR>
-nnoremap <Leader>R :call VimuxRunCommand("rhino todo.js")<CR>
-nnoremap <Leader>r :call VimuxRunCommand("./run")<CR>
+nnoremap <Leader>r :call VimuxRunCommand("!!")<CR>
+"nnoremap <Leader>R :call VimuxRunCommand("rhino todo.js")<CR>
+nnoremap <Leader>R :call VimuxRunCommand("./run")<CR>
 nnoremap <Leader>c :VimuxCloseRunner<CR>
 "nnoremap <Leader>r :call VimuxRunCommand("./vimuxrun.sh")<CR>
 
 "nnoremap <Leader>rt :RunThisCFile<CR>
 nnoremap <Leader>T :TagbarOpen<CR>
 nnoremap <Leader>u :GundoToggle<CR>
-nnoremap <Leader>n :NERDTreeToggle<CR>
+"nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>m :MinimapToggle<CR>
 nnoremap <Leader>i :Indent<CR>
 nnoremap <Leader>. :nohlsearch<CR>
@@ -187,25 +197,25 @@ nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 nnoremap <Leader>ve :vs ~/.vimrc<CR>
 nnoremap <Leader>vu :so ~/.vimrc<CR>
 nnoremap <Leader>vce :vs ~/.vim/colors/main.vim<CR>
-nnoremap <Leader>sc :vs ~/.vim/bundle/vim-snippets/snippets/c.snippets<CR>
-nnoremap <Leader>scpp :vs ~/.vim/bundle/vim-snippets/snippets/cpp.snippets<CR>
-nnoremap <Leader>sjs :vs ~/.vim/bundle/vim-snippets/snippets/javascript/javascript.snippets<CR>
-nnoremap <Leader>shtml :vs ~/.vim/bundle/vim-snippets/snippets/html.snippets<CR>
-nnoremap <Leader>se :vs ~/.vim/bundle/vim-snippets/snippets/_.snippets<CR> 
+nnoremap <Leader>s :Snip 
+nnoremap <Leader>N :o ~/dev/notes/.<CR>
+
 "map <Leader>w <Plug>(easymotion-w)
 "map <Leader>b <Plug>(easymotion-b)
 "map <Leader>s <Plug>(easymotion-s)
-map <Leader>f <Plug>(easymotion-s)
+map <Leader>f <Plug>(easymotion-overwin-f2)
 
-map / <Plug>(easymotion-sn)
-map n <Plug>(easymotion-next)
-sunmap n
-map N <Plug>(easymotion-prev)
+map <Leader>/ <Plug>(easymotion-sn)
+"map n <Plug>(easymotion-next)
+"sunmap n
+"map N <Plug>(easymotion-prev)
 map <Leader><space> <Plug>(easymotion-s)
 "i;w noremap ` <esc><right>a
 inoremap <C-H> <esc>i
-inoremap <C-J> <esc>bi
-inoremap <C-K> <esc>ea
+"inoremap <C-J> <esc>bi
+inoremap <C-J> <left>
+"inoremap <C-K> <esc>ea
+inoremap <C-K> <right>
 inoremap <C-L> <esc><right>a
 
 "
@@ -228,6 +238,7 @@ nnoremap < g,
 "Resize Vim Splits
 " 'V(iewport) H(eight) + or -'
 nnoremap <c-w><up> :res +10<CR>
+nnoremap <c-w>8 :vertical :res 85<CR>
 nnoremap <c-w><down> :res -10<CR>
 nnoremap <c-w><left> :vertical :res -10<CR>
 nnoremap <c-w><right> :vertical :res +10<CR>
@@ -241,23 +252,52 @@ nnoremap gM :Man <cword><CR>
 nnoremap g2M :Man 2 <cword><CR>
 nnoremap g3M :Man 3 <cword><CR>
 
-nnoremap gt :!ctags -R . <CR><CR>g<c-]>
-nnoremap gT :!ctags -R . <CR><CR>
+nnoremap grt :!ctags -R . <CR><CR>g<c-]>
+nnoremap gtt g<c-]>
+"nnoremap gT :!ctags -R . <CR><CR>
 
-nnoremap <leader><c-p> :CtrlP<CR>
-nnoremap <c-p> :CtrlPBuffer<CR>
+nnoremap gtn :tabnew<CR>
+nnoremap gtc :tabnew<CR>
+nnoremap gtl :tabnext<CR>
+nnoremap gth :tabprevious<CR>
+
+
+
+nnoremap <leader><c-p> :CtrlPBuffer<CR>
+nnoremap <c-p> :CtrlP<CR>
 
 nnoremap zm zM
 call camelcasemotion#CreateMotionMappings('<leader>')
 
-imap <Leader>\ <space><esc>;set paste<CR>s\<esc>;set nopaste<CR>a
-imap <Leader>` <space><esc>;set paste<CR>s`<esc>;set nopaste<CR>a
-imap <tab> <Plug>snipMateNextOrTrigger
-imap \ <Plug>snipMateTrigger
-smap \ <Plug>snipMateTrigger
+"imap <Leader>\ <space><esc>;set paste<CR>s\<esc>;set nopaste<CR>a
+"imap <Leader>` <space><esc>;set paste<CR>s`<esc>;set nopaste<CR>a
+"imap <tab> <Plug>snipMateTrigger
+"imap <C-\> <Plug>snipMateNextOrTrigger
+"smap <C-\> <Plug>snipMateNext
  
-let g:snipMate = {}
-let g:snipMate['no_match_completion_feedback_chars']=''
-let g:notes_directories = ['~/dev/notes']
-let g:notes_conceal_code = 0
+"imap <Leader>\ <space><esc>;set paste<CR>s\<esc>;set nopaste<CR>a
+"imap <C-\> <right>
 
+let g:snipMate = {}
+
+"let g:snipMate['no_match_completion_feedback_chars']='<right>'
+
+let g:notes_directories = ['~/dev/notes']
+
+
+inoremap <C-@> <C-Space>
+inoremap <C-Space> <right><right>
+
+nnoremap <leader>S :SyntasticCheck<CR>
+
+nnoremap <leader><leader>s :Snip javascript/javascript<CR>
+
+"
+
+"imap <silent> w <Plug>CamelCaseMotion_w
+"imap <silent> b <Plug>CamelCaseMotion_b
+"imap <silent> e <Plug>CamelCaseMotion_e
+"sunmap w
+"sunmap b
+"sunmap e
+"sunmap ge

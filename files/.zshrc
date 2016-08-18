@@ -10,7 +10,7 @@ PATH=/bin:/usr/bin
 [ -d ~/bin ] && PATH=~/bin:$PATH
 [ -d /usr/local/bin ] && PATH=$PATH:/usr/local/bin
 [ -d /usr/share/bin ] && PATH=$PATH:/usr/share/bin
-#PATH=$PATH:.
+PATH=$PATH:.
 export PATH
 
 MANPATH=/usr/share/man
@@ -80,7 +80,7 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z)
+plugins=(git z zsh-nvm)
 
 # User configuration
 
@@ -118,48 +118,55 @@ source ~/.aliases
 setopt nohistverify
 # setopt histexpand
 
-if [[ ! $TERM =~ "screen-256color" ]] ; then 
 
-   #HAS_SESSIONS=$( tmux ls > /dev/null && echo $? )
-   HAS_SESSIONS=$( tmux ls &> /dev/null && echo $? )
+tmon
 
-   if [[ $HAS_SESSIONS == 0 ]] ; then 
-
-      echo -e "\e[34m Available TMUX sessions: \e[0m "
-
-      STR=$(tmux ls) | sed 's/^/   /'
-      
-      echo -e "\e[32m   $STR\e[0m "
-      echo ""
-
-
-      echo -e "\e[34m What would you like to do? \e[0m "
-      echo "\e[33m   n - new tmux session"
-      echo "   q - exit to normal ZSH"
-      echo "   <session-name> - connect to session \e[0m "
-
-      read ANS
-
-      if [[ $ANS == "n" ]] ; then 
-         exec tmux
-      elif [[ $ANS == "q" ]] ; then 
-         clear
-      else 
-         exec tmux a -t $ANS
-      fi
-
-
-   else
-
-      echo -e "\e[34mThere are no active TMUX sessions.\e[0m"
-      echo -e "\e[33mWould you like to start a new TMUX session? (y/n)\e[1m"
-      read ANS
-      if [[ $ANS == "y" ]] ; then 
-         exec tmux
-      fi
-
-   fi
-
-fi
-
-
+#
+#if [[ ! $TERM =~ "screen-256color" ]] ; then 
+#
+#   #HAS_SESSIONS=$( tmux ls > /dev/null && echo $? )
+#   HAS_SESSIONS=$( tmux ls &> /dev/null && echo $? )
+#
+#   if [[ $HAS_SESSIONS == 0 ]] ; then 
+#
+#      echo -e "\e[34m Available TMUX sessions: \e[0m "
+#
+#      STR=$(tmux ls | sed -e 's/^/     /;s/:\s/\t/;s/(.\+\]//')
+#      #STR=$(tmux ls) | sed 's/^/   /'
+#      
+#      echo -e "\e[32m$STR\e[0m "
+#      echo ""
+#
+#
+#      echo -e "\e[34m What would you like to do? \e[0m "
+#      echo "\e[33m   c - Create new tmux session"
+#      echo       "   n - Nothing. Exit to normal ZSH"
+#      echo       "   <session-name> - connect to session \e[0m "
+#
+#      read ANS NAME
+#
+#      if [[ $ANS == "c" || $ANS == "create" || $ANS == "new" ]] ; then 
+#         if [[ $NAME ]] ; then
+#            tmux new-session -s $NAME
+#         else
+#            tmux
+#         fi
+#      elif [[ $ANS == "n" || $ANS == "q" ]] ; then 
+#         clear
+#         echo "Starting a non-tmux shell"
+#      else 
+#         tmux a -t $ANS
+#      fi
+#   else
+#      echo -e "\e[34mThere are no active TMUX sessions.\e[0m"
+#      echo -e "\e[33mWould you like to start a new TMUX session? (y/n)\e[1m"
+#      read ANS
+#      if [[ $ANS == "y" ]] ; then 
+#         exec tmux
+#      fi
+#
+#   fi
+#
+#fi
+#
+#
