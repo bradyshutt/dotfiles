@@ -22,3 +22,4 @@ alias lym=learnyoumongo
 alias so="source /home/brady/.zshrc"
 alias admin="./admin"
 alias evrc="editvimrc"
+alias irc="irssi"
