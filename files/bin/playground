@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+cd /home/brady/dev/playground/
+
+if [[ $(echo $TERM) == "screen-256color" ]] ; then 
+   tmux split-window -h
+   cd /home/brady/dev/playground/
+   tmux last-pane
+   echo "Enter test file name:"
+   read FILE
+   echo "Creating file $FILE" 
+   touch "$FILE".c
+   echo "Create a C test script?"
+   read TEST_ANS
+   if [[ $TEST_ANS == "y" ]] ; then
+      echo "Creating test script for file $FILE" 
+      TEST_FILE="$FILE".sh
+      echo $TEST_FILE
+      touch $TEST_FILE
+      echo "gcc "$FILE".c -o "$FILE".out" > $TEST_FILE
+      echo "./"$FILE".out" >> $TEST_FILE
+      chmod +x $TEST_FILE
+   fi
+   vim "$FILE".c
+
+else
+   echo "nop"
+
+fi
+
+
+
+

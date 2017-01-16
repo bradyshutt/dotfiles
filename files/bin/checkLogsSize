@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo ls -alh | grep G
+sudo ls -alh | grep M

@@ -1,0 +1,70 @@
+#!/bin/bash
+
+
+exit_error() {
+   echo "Something went wrong."
+   description
+   exit 1  
+} 
+
+description() {
+   echo "Generate a run script with the  command: "
+   echo "   $ mkrunsh <cfile> <outputfile> [-f <filename>]"
+}
+
+
+filename=run.sh
+cfilein="\$1"
+fileout=
+flags=strict
+
+while getopts "f:eh" opt; do 
+   case $opt in
+      h) 
+         echo "" ; echo ""
+         description 
+         exit 1 
+         ;;
+      e) 
+         flags=easy
+         shift
+         ;;
+      \?)
+         echo "Invalid Option."
+         echo "Generate a run script with the following command: "
+         echo "   $ mkrunsh <cfile> <outputfile> [<filename>]" 
+         echo "nope"  
+         exit_error
+         ;;
+
+      esac
+   done
+
+   if [[ $# > 2 ]] ; then 
+      filename=$3
+   elif [[ $# < 2 ]] ; then
+      exit_error
+   fi
+
+   cfilein=$1
+   fileout=$2
+
+   touch $filename
+
+   echo "#!/bin/bash" >> $filename
+   echo " " >> $filename
+   echo " " >> $filename
+   if [[ $flags == "strict" ]] ; then 
+      echo "if gcc -Wall -Werror -O3 $cfilein -o $fileout ; then " >> $filename
+   else
+      echo "if gcc $cfilein -o $fileout ; then " >> $filename
+   fi
+   echo "   ./$fileout" >> $filename
+   echo "else" >> $filename
+   echo "   echo \" \" ; echo \" \" " >> $filename
+   echo "   echo \"Compile unsuccessful, not running output.\" " >> $filename
+   echo "fi" >> $filename
+
+   chmod +x $filename
+
+

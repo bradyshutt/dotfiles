@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [[ $# == 1 ]]; then
+   mkdir $1
+   cd $1
+fi
+
+git clone https://github.com/angular/quickstart.git .
+npm install
+rm -rf .git
+rm protractor.config.js
+rm favicon.ico
+rm -rf e2e
+rm systemjs.config.extras.js
+rm app/app.component.spec.ts
+rm karma.conf.js
+rm karma-test-shim.js
+rm .travis.yml
+rm CHANGELOG.md
+rm LICENSE
+rm README.md
+

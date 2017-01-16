@@ -1,0 +1,1 @@
+xrandr -d :0 --output eDP1 --set Backlight 4000

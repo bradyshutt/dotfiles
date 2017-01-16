@@ -1,0 +1,12 @@
+#!/bin/bash
+
+TEXT=$(date +'%b %_d, %_I:%M%P' | sed -e 's/  / /g')
+
+if [[ $# < 1 ]] ; then
+  echo 'Missing arg(s)'
+  exit
+else
+  convert -font /home/brady/fonts/Impact/Impact.ttf -fill white -stroke black -strokewidth 1.8 -pointsize 36 -weight Heavy -draw "text 5,35 '$TEXT'" $1 $1
+fi
+
+

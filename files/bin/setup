@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+tmux split-window -h -p 19 
+tmux split-window -v
+
+
+

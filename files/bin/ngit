@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+'use strict';
+
+const fs = require('fs');
+const spawn = require('child_process').spawn;
+const readline = require('readline');
+
+let command = process.argv[2];
+
+const commands = {
+   plan() {
+      let commitMessage = process.argv[3];
+      if (!commitMessage) {
+         console.log('You need to specify a plan');
+         process.exit();
+      }
+      fs.writeFile('.ngit-plan', commitMessage, () => console.log('Plan saved.'));
+   },
+
+   show() {
+      fs.readFile('.ngit-plan', 'utf8', (err, message) => {
+         console.log(`The saved message is:\n   "${message}"`);
+      });
+   },
+
+   commit() {
+      fs.readFile('.ngit-plan', 'utf8', (err, message) => {
+         if (message === '' || message == null || message == undefined) {
+            console.log('You need to add a pre-commit message first.');
+            process.exit();
+         }
+         console.log(`The saved message is:\n   "${message}"`);
+         console.log('Committing changes.')
+         console.log('git add -A')
+         let addCmd = spawn('git', ['add', '-A'], {stdio: 'inherit'});
+         addCmd.on('close', () => {
+            console.log(`git commit -m "${message}"`)
+            let commitCmd = spawn('git', ['commit', '-m', `"${message}"`], {stdio: 'inherit'});
+            commitCmd.on('close', () => fs.writeFile('.ngit-plan', ''));
+         });
+      });
+   }
+}
+
+commands[command] && commands[command]() || console.log('Commands:\n -plan\n -show\n -commit') 
+

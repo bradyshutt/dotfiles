@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/home/brady/installs/arduino-1.6.11/arduino &
+

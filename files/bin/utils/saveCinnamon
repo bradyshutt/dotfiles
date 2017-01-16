@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [[ $# == 1 ]]; then 
+
+  if [[ $1 == "1" ]]; then
+    killall -HUP cinnamon
+  elif [[ $1 == "2" ]]; then
+    export DISPLAY=:0; cinnamon -r &
+  fi
+
+else
+
+    killall -HUP cinnamon
+    export DISPLAY=:0; cinnamon --replace &
+
+fi
