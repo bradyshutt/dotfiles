@@ -1,0 +1,33 @@
+
+alias h="history | $PAGER"
+alias ls="ls --color=auto"
+alias dir="dir --color=auto"
+alias vdir="vdir --color=auto"
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+alias ll="ls -al"
+alias l="ls -l"
+alias cl="clear && ls"
+alias cll="clear && ll"
+
+alias br="brightness"
+
+alias q="exit"
+alias n=node
+
+alias lyn=learnyounode
+alias lym=learnyoumongo
+alias so="source /home/brady/.zshrc"
+alias admin="./admin"
+alias evrc="editvimrc"
+alias irc="irssi"
+alias awrc="vim ~/.config/awesome/rc.lua"
+alias reso="source ~/.zshrc"
+
+alias "cd..2"="cd ../.."
+alias "cd..3"="cd ../../.."
+alias "cd..4"="cd ../../../.."
+alias "cd..5"="cd ../../../../.."
+alias "cd..6"="cd ../../../../../.."

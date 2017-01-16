@@ -1,0 +1,27 @@
+" Plugins
+set surround
+
+" Settings
+set gdefault
+set ignorecase
+
+" Keybindings
+imap jk <esc> 
+nnoremap ; : 
+nnoremap : ; 
+vnoremap ; : 
+vnoremap : ; 
+
+nnoremap J 5j
+nnoremap K 5k
+nnoremap M J
+"nnoremap B ^
+nnoremap gl gt
+nnoremap gh gT
+
+nmap \a :action code.align<CR>
+"map \r ;action ReformatCode<CR>
+
+"nmap \g ggvGkkkkkkkk
+
+

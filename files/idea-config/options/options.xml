@@ -1,0 +1,21 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="installed.kotlin.plugin.version" value="1.0.4-release-IJ2016.1-112" />
+    <property name="android-component-compatibility-check" value="1482611612479" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/dev/workspace/angular-book-2/forms&#10;/home/bshutt/school/cpe305/project/fall2016-project-bradyshutt&#10;/home/bshutt/school/cpe305/project/fall2016-project-bradyshutt/javaBackend&#10;/opt/jdk1.8.0_111" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="ideavim.statistics.timestamp" value="1482611616494" />
+    <property name="lastTip" value="18" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="JUnitSupport.hidePassedTests" value="false" />
+    <property name="decompiler.legal.notice.accepted" value="true" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Dependencies" />
+    <property name="PLUGIN_FILTER" value="uml&#10;diagram" />
+    <property name="com.intellij.diagnostic.IdeErrorsDialogactiveTab" value="0" />
+    <property name="KEYMAP" value="left&#10;move left&#10;split&#10;window&#10;next" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="300" />
+    <property name="JUnit.Splitter.Proportion" value="0.45692307" />
+  </component>
+</application>

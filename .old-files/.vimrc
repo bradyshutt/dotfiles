@@ -1,1 +1,0 @@
-/home/brady/dotfiles/files/.vimrc

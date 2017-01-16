@@ -1,0 +1,53 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/dev/workspace/angular-book-2/forms" />
+        <option value="$USER_HOME$/school/cpe305/project/fall2016-project-bradyshutt" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/dev/workspace/angular-book-2/forms" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/dev/workspace/angular-book-2/forms" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/dev/workspace/angular-book-2/forms">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-162.2228.15" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482614670467" />
+              <option name="buildTimestamp" value="1476428400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/school/cpe305/project/fall2016-project-bradyshutt">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-162.2228.15" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482611615528" />
+              <option name="buildTimestamp" value="1476428400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/school/cpe305/project/fall2016-project-bradyshutt/javaBackend">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-162.2228.15" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1480555239271" />
+              <option name="buildTimestamp" value="1476428400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

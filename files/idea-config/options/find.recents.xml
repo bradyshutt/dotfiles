@@ -1,0 +1,11 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>jk</find>
+      <find>BasicDB</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$USER_HOME$/school/cpe305/project/fall2016-project-bradyshutt/src/main/java/bshutt/coplan/</dir>
+    </dirStrings>
+  </component>
+</application>
