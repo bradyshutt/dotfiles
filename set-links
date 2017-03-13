@@ -30,7 +30,13 @@ ln -sf $FILES/.aliases $HOME/.aliases
 if [[ -a $HOME/.tmux.conf ]] ; then mv $HOME/.tmux.conf $OLD ; fi
 ln -sf $FILES/.tmux.conf $HOME/.tmux.conf
 
-if [[ -d $HOME/.vim ]] ; then mv $HOME/.vim $OLD ; fi
+if [[ -d $HOME/.vim ]] ; then 
+   if [[ -L $HOME/.vim ]] ; then 
+      rm $HOME/.vim
+   else
+      mv -f $HOME/.vim $OLD ;
+   fi
+fi 
 ln -sf $FILES/vim $HOME/.vim
 
 # if [[ -d $HOME/.vim/colors ]] ; then mv $HOME/.vim/colors/ $OLD ; fi
