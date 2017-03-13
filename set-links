@@ -1,43 +1,50 @@
 #!/bin/bash
 
-FILES="/home/brady/dotfiles/files"
-OLD="/home/brady/dotfiles/.old-files/"
-PROMT="Would you like to overwrite"
+FILES=$HOME"/dotfiles/files"
+OLD=$HOME"/dotfiles/.old-files"
 
-# if [ -a ~/.vimrc ]; then 
+# PROMT="Would you like to overwrite"
+
+# if [ -a $HOME/.vimrc ]; then 
 #    echo "$PROMPT .vimrc?"
 #    read ANS
 #    if [[ $ANS == y ]]; then 
-#       mv ~/.vimrc $OLD
+#       mv $HOME/.vimrc $OLD
 #    fi
 # fi
 
 mkdir -p $OLD
 
-if [[ -a ~/.vimrc ]] ; then mv ~/.vimrc $OLD ; fi
-ln -sf $FILES/.vimrc ../.vimrc
+if [[ -a $HOME/.vimrc ]] ; then mv $HOME/.vimrc $OLD ; fi
+ln -sf $FILES/.vimrc $HOME/.vimrc
 
-if [[ -a ~/.zshrc ]] ; then mv ~/.zshrc $OLD ; fi
-ln -sf $FILES/.zshrc ../.zshrc
+if [[ -a $HOME/.zshrc ]] ; then mv $HOME/.zshrc $OLD ; fi
+ln -sf $FILES/.zshrc $HOME/.zshrc
 
-if [[ -a ~/.bashrc ]] ; then mv ~/.bashrc $OLD ; fi
-ln -sf $FILES/.bashrc ../.bashrc
+if [[ -a $HOME/.bashrc ]] ; then mv $HOME/.bashrc $OLD ; fi
+ln -sf $FILES/.bashrc $HOME/.bashrc
 
-if [[ -a ~/.aliases ]] ; then mv ~/.aliases $OLD ; fi
-ln -sf $FILES/.aliases ../.aliases
+if [[ -a $HOME/.aliases ]] ; then mv $HOME/.aliases $OLD ; fi
+ln -sf $FILES/.aliases $HOME/.aliases
 
-if [[ -a ~/.tmux.conf ]] ; then mv ~/.tmux.conf $OLD ; fi
-ln -sf $FILES/.tmux.conf ../.tmux.conf
+if [[ -a $HOME/.tmux.conf ]] ; then mv $HOME/.tmux.conf $OLD ; fi
+ln -sf $FILES/.tmux.conf $HOME/.tmux.conf
 
-if [[ -d ~/.vim/colors ]] ; then mv ~/.vim/colors/ $OLD ; fi
-ln -sf $FILES/vim-colors/ ../.vim/colors/
+if [[ -d $HOME/.vim ]] ; then mv $HOME/.vim $OLD ; fi
+ln -sf $FILES/vim $HOME/.vim
 
-if [[ -d ~/.vim/autoload ]] ; then mv ~/.vim/autoload/ $OLD ; fi
-ln -sf "$FILES/vim-autoload" "../.vim/autoload/"
+# if [[ -d $HOME/.vim/colors ]] ; then mv $HOME/.vim/colors/ $OLD ; fi
+# ln -sf $FILES/vim-colors $HOME/.vim/colors
 
-mkdir -p "~/bin/"
-if [[ -a ~/bin/editvimrc ]] ; then mv ~/bin/editvimrc $OLD ; fi
-ln -sf $FILES/bin-editvimrc ../bin/editvimrc
+# if [[ -d $HOME/.vim/autoload ]] ; then mv $HOME/.vim/autoload/ $OLD ; fi
+# ln -sf $FILES/vim-autoload $HOME/.vim/autoload
 
-source ~/.bashrc
+# if [[ -d $HOME/.vim/bundle ]] ; then mv $HOME/.vim/bundle/ $OLD ; fi
+# ln -sf $FILES/vim-bundle $HOME/.vim/bundle
+
+mkdir -p $HOME/bin/
+if [[ -a $HOME/bin/editvimrc ]] ; then mv $HOME/bin/editvimrc $OLD ; fi
+ln -sf $FILES/bin-editvimrc $HOME/bin/editvimrc
+
+source $HOME/.bashrc
 
