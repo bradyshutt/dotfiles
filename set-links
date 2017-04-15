@@ -1,0 +1,57 @@
+#!/bin/bash
+
+FILES=$HOME"/dotfiles/files"
+OLD=$HOME"/dotfiles/.old-files"
+
+# PROMT="Would you like to overwrite"
+
+# if [ -a $HOME/.vimrc ]; then 
+#    echo "$PROMPT .vimrc?"
+#    read ANS
+#    if [[ $ANS == y ]]; then 
+#       mv $HOME/.vimrc $OLD
+#    fi
+# fi
+
+mkdir -p $OLD
+
+if [[ -a $HOME/.vimrc ]] ; then mv $HOME/.vimrc $OLD ; fi
+ln -sf $FILES/vimrc $HOME/.vimrc
+
+if [[ -a $HOME/.zshrc ]] ; then mv $HOME/.zshrc $OLD ; fi
+ln -sf $FILES/zshrc $HOME/.zshrc
+
+if [[ -a $HOME/.bashrc ]] ; then mv $HOME/.bashrc $OLD ; fi
+ln -sf $FILES/bashrc $HOME/.bashrc
+
+if [[ -a $HOME/.aliases ]] ; then mv $HOME/.aliases $OLD ; fi
+ln -sf $FILES/aliases $HOME/.aliases
+
+if [[ -a $HOME/.tmux.conf ]] ; then mv $HOME/.tmux.conf $OLD ; fi
+ln -sf $FILES/tmux.conf $HOME/.tmux.conf
+
+if [[ -d $HOME/.vim ]] ; then 
+   if [[ -L $HOME/.vim ]] ; then 
+      rm $HOME/.vim
+   else
+      rm -rf $OLD/.vim ;
+      mv -f $HOME/.vim $OLD ;
+   fi
+fi 
+ln -sf $FILES/vim $HOME/.vim
+
+# if [[ -d $HOME/.vim/colors ]] ; then mv $HOME/.vim/colors/ $OLD ; fi
+# ln -sf $FILES/vim-colors $HOME/.vim/colors
+
+# if [[ -d $HOME/.vim/autoload ]] ; then mv $HOME/.vim/autoload/ $OLD ; fi
+# ln -sf $FILES/vim-autoload $HOME/.vim/autoload
+
+# if [[ -d $HOME/.vim/bundle ]] ; then mv $HOME/.vim/bundle/ $OLD ; fi
+# ln -sf $FILES/vim-bundle $HOME/.vim/bundle
+
+mkdir -p $HOME/bin/
+if [[ -a $HOME/bin/editvimrc ]] ; then mv $HOME/bin/editvimrc $OLD ; fi
+ln -sf $FILES/bin-editvimrc $HOME/bin/editvimrc
+
+source $HOME/.bashrc
+

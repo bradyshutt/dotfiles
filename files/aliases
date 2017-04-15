@@ -31,3 +31,5 @@ alias "cd..3"="cd ../../.."
 alias "cd..4"="cd ../../../.."
 alias "cd..5"="cd ../../../../.."
 alias "cd..6"="cd ../../../../../.."
+
+alias mars="java -jar ~/Mars.jar &"

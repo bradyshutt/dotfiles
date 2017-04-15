@@ -34,7 +34,7 @@ Plugin 'https://github.com/hail2u/vim-css3-syntax.git'
 Plugin 'JulesWang/css.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'mickaobrien/vim-stackoverflow'
-Plugin 'KabbAmine/zeavim.vim'
+"Plugin 'KabbAmine/zeavim.vim'
 Plugin 'Dinduks/vim-java-get-set.git'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
@@ -149,10 +149,10 @@ nmap gz<CR> <Plug>Zeavim
 nmap gzz <Plug>ZVKeyDocset<CR>
 vmap gz<CR> <Plug>ZVVisSelection
 nmap gzZ <Plug>ZVKeyDocset<c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w>
-let g:zv_file_types = {
-         \ 'javascript' : 'javascript,backbone,nodejs,express,jquery,mongodb',
-         \ 'css'        : 'css,bootstrap'
-         \ }
+"let g:zv_file_types = {
+"         'javascript' : 'javascript,backbone,nodejs,express,jquery,mongodb',
+"         \ 'css'        : 'css,bootstrap'
+"         \ }
 
 
 " Java GetSet
@@ -220,8 +220,8 @@ set ic
 
 
 " Tabs
-set tabstop=3
-set shiftwidth=3
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 
