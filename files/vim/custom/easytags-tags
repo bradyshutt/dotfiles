@@ -1,0 +1,135 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+:	//home/bshutt/dotfiles/files/vimrc	/^noremap : ;$/;"	m	language:Vim
+;	//home/bshutt/dotfiles/files/vimrc	/^noremap ; :$/;"	m	language:Vim
+<	//home/bshutt/dotfiles/files/vimrc	/^nnoremap < g,$/;"	m	language:Vim
+<C-g><C-t>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <C-g><C-t> :call VimuxRunCommand(".\/run")<CR>$/;"	m	language:Vim
+<C-H>	//home/bshutt/dotfiles/files/vimrc	/^inoremap <C-H> <esc>i$/;"	m	language:Vim
+<c-h>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <silent> <c-h> :TmuxNavigateLeft<CR>$/;"	m	language:Vim
+<c-j>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <silent> <c-j> :TmuxNavigateDown<CR>$/;"	m	language:Vim
+<c-k>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <silent> <c-k> :TmuxNavigateUp<CR>$/;"	m	language:Vim
+<C-L>	//home/bshutt/dotfiles/files/vimrc	/^inoremap <C-L> <esc><right>a$/;"	m	language:Vim
+<c-l>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <silent> <c-l> :TmuxNavigateRight<CR>$/;"	m	language:Vim
+<c-left>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-left> g;$/;"	m	language:Vim
+<c-p>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-p> :CtrlP<CR>$/;"	m	language:Vim
+<c-right>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-right> g,$/;"	m	language:Vim
+<c-w>1	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>1 :vertical :res 45<CR>$/;"	m	language:Vim
+<c-w>2	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>2 :vertical :res 50<CR>$/;"	m	language:Vim
+<c-w>3	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>3 :vertical :res 55<CR>$/;"	m	language:Vim
+<c-w>4	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>4 :vertical :res 62<CR>$/;"	m	language:Vim
+<c-w>5	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>5 :vertical :res 68<CR>$/;"	m	language:Vim
+<c-w>6	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>6 :vertical :res 70<CR>$/;"	m	language:Vim
+<c-w>7	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>7 :vertical :res 75<CR>$/;"	m	language:Vim
+<c-w>8	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w>8 :vertical :res 85<CR>$/;"	m	language:Vim
+<c-w><down>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w><down> :res -10<CR>$/;"	m	language:Vim
+<c-w><left>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w><left> :vertical :res -10<CR>$/;"	m	language:Vim
+<c-w><right>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w><right> :vertical :res +10<CR>$/;"	m	language:Vim
+<c-w><up>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <c-w><up> :res +10<CR>$/;"	m	language:Vim
+<Leader>.	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>. :nohlsearch<CR>$/;"	m	language:Vim
+<Leader>/	//home/bshutt/dotfiles/files/vimrc	/^map <Leader>\/ <Plug>(easymotion-overwin-f2)$/;"	m	language:Vim
+<Leader><	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>< <<$/;"	m	language:Vim
+<leader><c-p>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <leader><c-p> :CtrlPBuffer<CR>$/;"	m	language:Vim
+<Leader><Leader>s	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader><Leader>s :Snip javascript\/javascript<CR>$/;"	m	language:Vim
+<Leader><space>	//home/bshutt/dotfiles/files/vimrc	/^map <Leader><space> <Plug>(easymotion-s)$/;"	m	language:Vim
+<Leader>=	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>= <C-W>=$/;"	m	language:Vim
+<Leader>>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>> >>$/;"	m	language:Vim
+<leader>b	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <leader>b :TagbarToggle<CR>$/;"	m	language:Vim
+<Leader>c	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>c :VimuxCloseRunner<CR>$/;"	m	language:Vim
+<Leader>f	//home/bshutt/dotfiles/files/vimrc	/^map <Leader>f <Plug>(easymotion-sn)$/;"	m	language:Vim
+<Leader>i	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>i :Indent<CR>$/;"	m	language:Vim
+<Leader>m	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>m :MinimapToggle<CR>$/;"	m	language:Vim
+<Leader>n	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>n :NERDTreeToggle<CR>$/;"	m	language:Vim
+<Leader>N	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>N :o ~\/dotfiles\/files\/vim\/custom\/notes\/.<CR>$/;"	m	language:Vim
+<Leader>r	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>r :call VimuxRunCommand("!!")<CR>$/;"	m	language:Vim
+<Leader>R	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>R :Trun $/;"	m	language:Vim
+<Leader>s	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>s :Snip $/;"	m	language:Vim
+<leader>S	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <leader>S :SyntasticCheck<CR>$/;"	m	language:Vim
+<Leader>T	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>T :TagbarOpen<CR>$/;"	m	language:Vim
+<Leader>u	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>u :GundoToggle<CR>$/;"	m	language:Vim
+<Leader>vce	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>vce :vs ~\/.vim\/colors\/main.vim<CR>$/;"	m	language:Vim
+<Leader>ve	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>ve :vs ~\/.vimrc<CR>$/;"	m	language:Vim
+<Leader>vu	//home/bshutt/dotfiles/files/vimrc	/^nnoremap <Leader>vu :so ~\/.vimrc<CR>$/;"	m	language:Vim
+>	//home/bshutt/dotfiles/files/vimrc	/^nnoremap > g;$/;"	m	language:Vim
+b	//home/bshutt/dotfiles/files/vimrc	/^map <silent> b <Plug>CamelCaseMotion_b$/;"	m	language:Vim
+B	//home/bshutt/dotfiles/files/vimrc	/^nnoremap B ^$/;"	m	language:Vim
+b:javagetset_getterTemplate	//home/bshutt/dotfiles/files/vimrc	/^let b:javagetset_getterTemplate=$/;"	v	language:Vim
+b:javagetset_setterTemplate	//home/bshutt/dotfiles/files/vimrc	/^let b:javagetset_setterTemplate=$/;"	v	language:Vim
+e	//home/bshutt/dotfiles/files/vimrc	/^map <silent> e <Plug>CamelCaseMotion_e$/;"	m	language:Vim
+g2M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap g2M :Man 2 <cword><CR>$/;"	m	language:Vim
+g3M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap g3M :Man 3 <cword><CR>$/;"	m	language:Vim
+g:EasyMotion_do_mapping	//home/bshutt/dotfiles/files/vimrc	/^let g:EasyMotion_do_mapping = 0 	"Disable default mappings$/;"	v	language:Vim
+g:EasyMotion_enter_jump_first	//home/bshutt/dotfiles/files/vimrc	/^let g:EasyMotion_enter_jump_first=1$/;"	v	language:Vim
+g:EasyMotion_keys	//home/bshutt/dotfiles/files/vimrc	/^let g:EasyMotion_keys='ASDFGHJKL;QWERTYUIOPZXCVBNM'$/;"	v	language:Vim
+g:EasyMotion_smartcase	//home/bshutt/dotfiles/files/vimrc	/^let g:EasyMotion_smartcase = 1$/;"	v	language:Vim
+g:EasyMotion_space_jump_first	//home/bshutt/dotfiles/files/vimrc	/^let g:EasyMotion_space_jump_first=1$/;"	v	language:Vim
+g:EasyMotion_startofline	//home/bshutt/dotfiles/files/vimrc	/^let g:EasyMotion_startofline=1 " keep cursor column when j,k motion$/;"	v	language:Vim
+g:EasyMotion_use_upper	//home/bshutt/dotfiles/files/vimrc	/^let g:EasyMotion_use_upper=1$/;"	v	language:Vim
+g:easytags_async	//home/bshutt/dotfiles/files/vimrc	/^let g:easytags_async = 1$/;"	v	language:Vim
+g:easytags_dynamic_files	//home/bshutt/dotfiles/files/vimrc	/^let g:easytags_dynamic_files = 2$/;"	v	language:Vim
+g:easytags_events	//home/bshutt/dotfiles/files/vimrc	/^let g:easytags_events = ['BufReadPost', 'BufWritePost']$/;"	v	language:Vim
+g:easytags_resolve_links	//home/bshutt/dotfiles/files/vimrc	/^let g:easytags_resolve_links = 1$/;"	v	language:Vim
+g:easytags_suppress_ctags_warning	//home/bshutt/dotfiles/files/vimrc	/^let g:easytags_suppress_ctags_warning = 1$/;"	v	language:Vim
+g:indentLine_char	//home/bshutt/dotfiles/files/vimrc	/^let g:indentLine_char='.'$/;"	v	language:Vim
+g:multi_cursor_exit_from_normal_mode	//home/bshutt/dotfiles/files/vimrc	/^let g:multi_cursor_exit_from_normal_mode=0$/;"	v	language:Vim
+g:multi_cursor_insert_maps	//home/bshutt/dotfiles/files/vimrc	/^let g:multi_cursor_insert_maps ={'j':1}$/;"	v	language:Vim
+g:multi_cursor_quit_key	//home/bshutt/dotfiles/files/vimrc	/^let g:multi_cursor_quit_key=';'$/;"	v	language:Vim
+g:notes_directories	//home/bshutt/dotfiles/files/vimrc	/^let g:notes_directories = ['~\/dotfiles\/files\/vim\/custom\/notes']$/;"	v	language:Vim
+g:pymode_python	//home/bshutt/dotfiles/files/vimrc	/^let g:pymode_python = 'python3'$/;"	v	language:Vim
+g:syntastic_always_populate_loc_list	//home/bshutt/dotfiles/files/vimrc	/^let g:syntastic_always_populate_loc_list = 0$/;"	v	language:Vim
+g:syntastic_auto_jump	//home/bshutt/dotfiles/files/vimrc	/^let g:syntastic_auto_jump = 0$/;"	v	language:Vim
+g:syntastic_auto_loc_list	//home/bshutt/dotfiles/files/vimrc	/^let g:syntastic_auto_loc_list = 0$/;"	v	language:Vim
+g:syntastic_check_on_open	//home/bshutt/dotfiles/files/vimrc	/^let g:syntastic_check_on_open = 0$/;"	v	language:Vim
+g:syntastic_check_on_wq	//home/bshutt/dotfiles/files/vimrc	/^let g:syntastic_check_on_wq = 0$/;"	v	language:Vim
+g:syntastic_javascript_checkers	//home/bshutt/dotfiles/files/vimrc	/^let g:syntastic_javascript_checkers = ['eslint']$/;"	v	language:Vim
+g:syntastic_mode_map	//home/bshutt/dotfiles/files/vimrc	/^let g:syntastic_mode_map = {$/;"	v	language:Vim
+g:tmux_navigator_no_mappings	//home/bshutt/dotfiles/files/vimrc	/^let g:tmux_navigator_no_mappings=1$/;"	v	language:Vim
+g:tmux_navigator_save_on_switch	//home/bshutt/dotfiles/files/vimrc	/^let g:tmux_navigator_save_on_switch=1$/;"	v	language:Vim
+g:VimuxHeight	//home/bshutt/dotfiles/files/vimrc	/^let g:VimuxHeight = "37"$/;"	v	language:Vim
+g:VimuxOrientation	//home/bshutt/dotfiles/files/vimrc	/^let g:VimuxOrientation = "h"$/;"	v	language:Vim
+g:zv_disable_mapping	//home/bshutt/dotfiles/files/vimrc	/^let g:zv_disable_mapping = 1$/;"	v	language:Vim
+ge	//home/bshutt/dotfiles/files/vimrc	/^map <silent> ge <Plug>CamelCaseMotion_ge$/;"	m	language:Vim
+gjb	//home/bshutt/dotfiles/files/vimrc	/^noremap gjb :InsertBothGetterSetter<CR>$/;"	m	language:Vim
+gjg	//home/bshutt/dotfiles/files/vimrc	/^noremap gjg :InsertGetterOnly<CR>$/;"	m	language:Vim
+gjs	//home/bshutt/dotfiles/files/vimrc	/^noremap gjs :InsertSetterOnly<CR>$/;"	m	language:Vim
+gM	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gM :Man <cword><CR>$/;"	m	language:Vim
+gM	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gM :Man <cword><CR>$/;"	m	language:Vim
+gm	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gm `$/;"	m	language:Vim
+gO	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gO :CtrlP<CR>$/;"	m	language:Vim
+grt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap grt :!ctags -R . <CR><CR>g<c-]>$/;"	m	language:Vim
+gsh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsh :leftabove vnew<CR> $/;"	m	language:Vim
+gsj	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsj :rightbelow new<CR> $/;"	m	language:Vim
+gsk	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsk :leftabove new<CR> $/;"	m	language:Vim
+gsl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsl :rightbelow vnew<CR> $/;"	m	language:Vim
+gT	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gT  :!ctags -R . <CR><CR>$/;"	m	language:Vim
+gtc	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtc :tabnew<CR>$/;"	m	language:Vim
+gth	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gth :tabprevious<CR>$/;"	m	language:Vim
+gtl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtl :tabnext<CR>$/;"	m	language:Vim
+gtn	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtn :tabnew<CR>$/;"	m	language:Vim
+gtt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtt g<c-]>$/;"	m	language:Vim
+gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^nmap gz<CR> <Plug>Zeavim$/;"	m	language:Vim
+gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^vmap gz<CR> <Plug>ZVVisSelection$/;"	m	language:Vim
+gzZ	//home/bshutt/dotfiles/files/vimrc	/^nmap gzZ <Plug>ZVKeyDocset<c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w>$/;"	m	language:Vim
+gzz	//home/bshutt/dotfiles/files/vimrc	/^nmap gzz <Plug>ZVKeyDocset<CR>$/;"	m	language:Vim
+H	//home/bshutt/dotfiles/files/vimrc	/^noremap H ,$/;"	m	language:Vim
+Indent	//home/bshutt/dotfiles/files/vimrc	/^command! Indent :normal myggvG=`y:delm yzz$/;"	c	language:Vim
+J	//home/bshutt/dotfiles/files/vimrc	/^noremap <silent> J 5j$/;"	m	language:Vim
+jk	//home/bshutt/dotfiles/files/vimrc	/^inoremap jk <esc>$/;"	m	language:Vim
+Jk	//home/bshutt/dotfiles/files/vimrc	/^inoremap Jk <esc>$/;"	m	language:Vim
+jl	//home/bshutt/dotfiles/files/vimrc	/^inoremap jl <esc><right>a$/;"	m	language:Vim
+K	//home/bshutt/dotfiles/files/vimrc	/^noremap <silent> K 5k$/;"	m	language:Vim
+L	//home/bshutt/dotfiles/files/vimrc	/^noremap L ;$/;"	m	language:Vim
+M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap M J$/;"	m	language:Vim
+mapleader	//home/bshutt/dotfiles/files/vimrc	/^let mapleader=","$/;"	v	language:Vim
+NERDTreeIgnore	//home/bshutt/dotfiles/files/vimrc	/^let NERDTreeIgnore=['\\.class$' ]$/;"	v	language:Vim
+NoSyntastic	//home/bshutt/dotfiles/files/vimrc	/^command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode$/;"	c	language:Vim
+Snip	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Snip :vs \/home\/bshutt\/.vim\/bundle\/vim-snippets\/snippets\/<args>.snippets$/;"	c	language:Vim
+Snippets	//home/bshutt/dotfiles/files/vimrc	/^command! Snippets :vs \/home\/bshutt\/.vim\/bundle\/vim-snippets\/snippets\/.$/;"	c	language:Vim
+Trun	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Trun VimuxRunCommand("<args>")$/;"	c	language:Vim
+w	//home/bshutt/dotfiles/files/vimrc	/^map <silent> w <Plug>CamelCaseMotion_w$/;"	m	language:Vim
+W	//home/bshutt/dotfiles/files/vimrc	/^noremap W \$$/;"	m	language:Vim
+w!!	//home/bshutt/dotfiles/files/vimrc	/^cmap w!! w !sudo tee > \/dev\/null %$/;"	m	language:Vim
+zh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zh 14zh$/;"	m	language:Vim
+zl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zl 14zl$/;"	m	language:Vim
+zo	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zo zO$/;"	m	language:Vim
+zO	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zO zR$/;"	m	language:Vim
+zr	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zr :set foldlevel=1<CR>$/;"	m	language:Vim
+zx	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zx zX$/;"	m	language:Vim

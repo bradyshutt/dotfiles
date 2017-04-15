@@ -88,6 +88,7 @@ set synmaxcol=160
 let g:indentLine_char='.'
 colorscheme main
 set colorcolumn=81
+set rtp+=~/.vim/custom/
 "syntax match Tab /\t/
 
 
@@ -184,7 +185,7 @@ sunmap ge
 
 
 " Easytags
-set tags=./tags;,~/.vimtags
+set tags=~/.vim/custom/easytags-tags
 let g:easytags_events = ['BufReadPost', 'BufWritePost']
 let g:easytags_async = 1
 let g:easytags_dynamic_files = 2
@@ -250,7 +251,7 @@ noremap : ;
 inoremap jk <esc>
 inoremap Jk <esc>
 inoremap jl <esc><right>a
-inoremap ~ <esc><right>a
+"inoremap ~ <esc><right>a
 nnoremap M J
 
 
@@ -342,7 +343,7 @@ nnoremap <Leader>ve :vs ~/.vimrc<CR>
 nnoremap <Leader>vu :so ~/.vimrc<CR>
 nnoremap <Leader>vce :vs ~/.vim/colors/main.vim<CR>
 nnoremap <Leader>s :Snip 
-nnoremap <Leader>N :o ~/dev/notes/.<CR>
+nnoremap <Leader>N :o ~/dotfiles/files/vim/custom/notes/.<CR>
 nnoremap <Leader><Leader>s :Snip javascript/javascript<CR>
 
 
@@ -377,7 +378,7 @@ nnoremap zh 14zh
 "let g:snipMate = {}
 "let g:snipMate['no_match_completion_feedback_chars']='<right>'
 
-let g:notes_directories = ['~/dev/notes']
+let g:notes_directories = ['~/dotfiles/files/vim/custom/notes']
 
 "nnoremap % v%
 "set showmatch
