@@ -16,7 +16,7 @@ Plugin 'terryma/vim-multiple-cursors'     "MULTIPLE CURSORS
 Plugin 'MarcWeber/vim-addon-mw-utils'     "For Snipmate
 Plugin 'tomtom/tlib_vim'                  "For Snipmate
 Plugin 'garbas/vim-snipmate'              "For Snipmate
-Plugin 'honza/vim-snippets'               "For Snipmate
+"Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround' 
 Plugin 'scrooloose/syntastic'
 Plugin 'bkad/CamelCaseMotion' 
