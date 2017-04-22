@@ -19,7 +19,7 @@ alias n=node
 
 alias lyn=learnyounode
 alias lym=learnyoumongo
-alias so="source /home/brady/.zshrc"
+alias so="source ~/.zshrc"
 alias admin="./admin"
 alias evrc="editvimrc"
 alias irc="irssi"

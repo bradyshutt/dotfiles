@@ -14,7 +14,7 @@ PATH=$PATH:/opt/jdk1.8.0_111/bin
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:/opt/WebStorm-163.7743.25/bin
 PATH=$PATH:/opt/android-studio/bin
-PATH=$PATH:~/.nvm/versions/node/v6.9.1/bin
+PATH=$PATH:/opt/jdk1.8.0_121/bin
 PATH=$PATH:.
 export PATH=$PATH
 
@@ -38,9 +38,9 @@ EDITOR=vim
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="Agnoster"
-# ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 # source ~/.oh-my-zsh/custom/second.zsh-theme
+source ~/.oh-my-zsh/custom/two-lines.zsh-theme
 
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 

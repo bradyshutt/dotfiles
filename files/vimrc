@@ -39,6 +39,7 @@ Plugin 'Dinduks/vim-java-get-set.git'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'leafgarland/typescript-vim'
 "Plugin 'Valloric/YouCompleteMe.git'
 
 "Plugin 'vim-scripts/a.vim' " call :AT to open a header file or s/t  
@@ -184,7 +185,7 @@ sunmap ge
 
 
 " Easytags
-set tags=./tags;,~/.vimtags
+set tags=./.tags;,~/.vimtags
 let g:easytags_events = ['BufReadPost', 'BufWritePost']
 let g:easytags_async = 1
 let g:easytags_dynamic_files = 2
@@ -220,8 +221,8 @@ set ic
 
 
 " Tabs
-set tabstop=3
-set shiftwidth=3
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 
@@ -385,5 +386,4 @@ let g:notes_directories = ['~/dev/notes']
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
-
 
