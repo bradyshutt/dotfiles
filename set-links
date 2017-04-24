@@ -50,9 +50,18 @@ ln -sf $FILES/vim $HOME/.vim
 # if [[ -d $HOME/.vim/bundle ]] ; then mv $HOME/.vim/bundle/ $OLD ; fi
 # ln -sf $FILES/vim-bundle $HOME/.vim/bundle
 
-mkdir -p $HOME/bin/
-if [[ -a $HOME/bin/editvimrc ]] ; then mv $HOME/bin/editvimrc $OLD ; fi
-ln -sf $FILES/bin-editvimrc $HOME/bin/editvimrc
+# If $HOME/bin exists and is a link
+if [[ -L $HOME/bin ]] ; then
+  rm $HOME/bin
+# Else If $HOME/bin exists and is a directory
+elif [[ -d $HOME/bin ]] ; then
+  rm -rf $OLD/bin
+  mv -f $HOME/bin $OLD
+fi 
+ln -sf $FILES/bin $HOME/bin
+
+#if [[ -a $HOME/bin/editvimrc ]] ; then mv $HOME/bin/editvimrc $OLD ; fi
+#ln -sf $FILES/bin-editvimrc $HOME/bin/editvimrc
 
 source $HOME/.bashrc
 

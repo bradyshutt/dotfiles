@@ -1,0 +1,48 @@
+
+
+if [[ $1 == "git" ]] ; then 
+  echo -e "\n\tSee git logs"
+  echo -e "\t\tgit log"
+  echo -e "\t\tgit log --pretty=oneline"
+  echo -e "\n\tList remotes"
+  echo -e "\t\tgit remote -v"
+  echo -e "\n\tSee diff"
+  echo -e "\t\tgit di"
+  echo -e "\n\tCheckout branch"
+  echo -e "\t\tgit co <branch>"
+  echo -e "\n\tGlobal Configs"
+  echo -e "\t\tgit config --global merge.tool vimdiff"
+  echo -e "\t\tgit config --global user.name <name>"
+  echo -e "\t\tgit config --global user.email <email>"
+  echo -e "\n\tGit fetch merge flow"
+  echo -e "\t\tFetch"
+  echo -e "\t\t\tgit fetch"
+  echo -e "\t\tView branches"
+  echo -e "\t\t\tgit branch -a"
+  echo -e "\t\tView commits of fetched branch"
+  echo -e "\t\t\tgit log origin/master"
+  echo -e "\t\tMerge"
+  echo -e "\t\t\tgit merge origin/master"
+  echo -e "\t\tReset (Fix mistakes from merge)"
+  echo -e "\t\t\tgit reset --hard"
+  echo -e ""
+
+elif [[ $1 == "vim-diff" ]] ; then
+  echo -e "\n\tProcess"
+  echo -e "\t\tgit fetch"
+  echo -e "\t\tgit log origin/master"
+  echo -e "\t\tgit log origin/master --pretty=oneline"
+  echo -e "\t\tgit merge origin/master"
+  echo -e "\t\t*conflict*"
+  echo -e "\t\tgit difftool"
+  echo -e "\n\tDiff Commands"
+  echo -e "\t\t:diffoff"
+  echo -e "\t\t:diffthis"
+  echo -e "\t\t:diffupdate"
+  echo -e "\n\tAccept "
+  echo -e "\t\t:diffget <bufspec>"
+  echo -e ""
+  
+fi 
+
+
