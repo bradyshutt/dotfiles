@@ -9,7 +9,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'easymotion/vim-easymotion'        "Easymotion
 Plugin 'severin-lemaignan/vim-minimap'    "VIM Minimap
 Plugin 'scrooloose/nerdtree.git'          "NERDtree
-Plugin 'kien/ctrlp.vim.git'               "CTRL-p
+Plugin 'ctrlpvim/ctrlp.vim.git'           "CTRLP
 Plugin 'sjl/gundo.vim.git'                "GUNDO
 Plugin 'majutsushi/tagbar'                "TAGBAR
 Plugin 'terryma/vim-multiple-cursors'     "MULTIPLE CURSORS
@@ -61,8 +61,8 @@ let g:pymode_python = 'python3'
 " Commands
 command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode
 command! Indent :normal myggvG=`y:delm yzz
-command! Snippets :vs /home/bshutt/.vim/bundle/vim-snippets/snippets/.
-command! -nargs=1 Snip :vs /home/bshutt/.vim/bundle/vim-snippets/snippets/<args>.snippets
+command! Snippets :vs ~/.vim/custom/snippets/.
+command! -nargs=1 Snip :vs ~/.vim/custom/snippets/<args>.snippets
 "command! -nargs=1 Rn :call VimuxRunCommand(<args>)<CR>
 command! -nargs=1 Trun VimuxRunCommand("<args>")
 nnoremap <Leader>R :Trun 
@@ -139,9 +139,12 @@ let g:VimuxOrientation = "h"
 let g:VimuxHeight = "37"
 
 
-" Ctrl-p
+" CTRLP
+let g:ctrlp_working_path_mode = 'ca'
+let g:ctrlp_custom_ignore = '\.(git\|class\|swp\|zip\|swp)$'
 nnoremap <leader><c-p> :CtrlPBuffer<CR>
 nnoremap <c-p> :CtrlP<CR>
+nnoremap gO :CtrlP<CR>
 
 
 " Zeal Docs
@@ -213,11 +216,12 @@ hi clear SignColumn
 "let g:ycm_min_num_of_chars_for_completion = 1
 
 
-
-
-" Search Settings 
-set incsearch
-set ic
+" Search Settings
+set incsearch     " Highlight results as you type 
+set ignorecase    " Case insensitive search
+set smartcase     " Case sensitive search iff captials in query
+set nohlsearch    " Don't keep highlights after search
+noremap <CR> :set hlsearch! hlsearch?<CR>
 
 
 " Tabs
@@ -230,7 +234,7 @@ set expandtab
 set foldenable
 "set foldmethod=indent
 set foldmethod=syntax
-set fmr={,}
+set foldmarker={,}
 set foldcolumn=0 
 set foldlevel=99      
 "set foldlevelstart=9
@@ -301,7 +305,6 @@ nnoremap gsh :leftabove vnew<CR>
 nnoremap gsl :rightbelow vnew<CR> 
 nnoremap gsk :leftabove new<CR> 
 nnoremap gsj :rightbelow new<CR> 
-nnoremap gO :CtrlP<CR>
 nnoremap gM :Man <cword><CR>
 nnoremap g2M :Man 2 <cword><CR>
 nnoremap g3M :Man 3 <cword><CR>
