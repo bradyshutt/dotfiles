@@ -1,1 +1,59 @@
-//home/bshutt/dotfiles/files/aliases
+
+alias h="history | $PAGER"
+alias ls="ls"
+alias dir="dir"
+alias vdir="vdir"
+alias grep="grep"
+alias fgrep="fgrep"
+alias egrep="egrep"
+
+alias ll="ls -al"
+alias l="ls -l"
+alias cl="clear && ls"
+alias cll="clear && ll"
+
+alias br="brightness"
+
+alias q="exit"
+alias n=node
+
+alias lyn=learnyounode
+alias lym=learnyoumongo
+alias so="source ~/.zshrc"
+alias admin="./admin"
+alias evrc="editvimrc"
+alias irc="irssi"
+
+
+# -- Work ----------------------------------------------
+
+alias sshprod="ssh xyztextbooks@74.82.130.195"
+
+alias vd="cd-laravel_box && vagrant destroy"
+alias vu="cd-laravel_box && vagrant up"
+alias vp="cd-laravel_box && vagrant provision"
+alias vstat="vagrant status"
+#alias vssh="cd-laravel_box && vagrant ssh"
+alias vssh="ssh -p 2222 vagrant@localhost"
+alias vssh-s="ssh -p 2222 vagrant@localhost -t \"cd /var/www/sails/xyztextbooks_sails_framework/ ; /bin/bash\""
+alias vssh-sl="ssh -p 2222 vagrant@localhost -t \"cd /var/www/sails/xyztextbooks_sails_framework/ ; sails lift\""
+
+alias cdw="cd ~/Documents/htdocs/xyz_websites"
+
+alias cd-laravel_box="cd ~/Documents/htdocs/mathtv_laravel_box"
+alias cd-lbox="cd ~/Documents/htdocs/mathtv_laravel_box"
+alias cd-fw="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/"
+alias cd-fw-xyz="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/xyztextbooks/"
+alias cd-fw-cms="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/xyz_cms/"
+alias cd-fw-admin="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/admin/"
+alias cd-fw-mathtv="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/mathtv/"
+
+alias cd-web-admin="cd ~/Documents/htdocs/xyz_websites/admin.mathtv.dev/"
+alias cd-web-admin-xyz="cd ~/Documents/htdocs/xyz_websites/admin.xyztextbooks.dev/"
+alias cd-web-mathtv="cd ~/Documents/htdocs/xyz_websites/www.mathtv.dev/"
+alias cd-web-xyz="cd ~/Documents/htdocs/xyz_websites/www.xyztextbooks.dev/"
+
+alias cd-new="cd ~/Documents/htdocs/xyz_websites/MathTV-Website-3.0/"
+
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
