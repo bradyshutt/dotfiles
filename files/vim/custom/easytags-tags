@@ -147,7 +147,7 @@ Indent	//home/bshutt/dotfiles/files/vimrc	/^command! Indent :normal myggvG=`y:de
 insert	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean insert(int element) {$/;"	m	language:Java	class:MyMinHeap
 insertEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void insertEdge(int x, int y, boolean directed) {$/;"	m	language:Java	class:GraphStart
 invCounter	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public int invCounter(int[] ranking) {$/;"	m	language:Java	class:Inversions
-Inversions	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public Inversions() { }$/;"	m	language:Java	class:Inversions
+Inversions	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public Inversions() {$/;"	m	language:Java	class:Inversions
 Inversions	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^public class Inversions {$/;"	c	language:Java
 isBipartite	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^  public boolean isBipartite() {$/;"	m	language:Java	class:BipartiteCheck
 isConnected	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  public boolean isConnected() {$/;"	m	language:Java	class:ConnectCheck
@@ -166,6 +166,8 @@ main	/home/bshutt/school/spring2017/cpe349/lab3-1/Driver.java	/^  public static 
 mapleader	//home/bshutt/dotfiles/files/vimrc	/^let mapleader=","$/;"	v	language:Vim
 MAXDEGREE	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXDEGREE = 50;$/;"	f	language:Java	class:GraphStart
 MAXV	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXV = 100;$/;"	f	language:Java	class:GraphStart
+mergeCount	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int mergeCount(int[] left, int[] right) {$/;"	m	language:Java	class:Inversions	file:
+mergeCount2	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int mergeCount2(int[] left, int[] right) {$/;"	m	language:Java	class:Inversions	file:
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap() {$/;"	m	language:Java	class:MyMinHeap
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap(int capacity) {$/;"	m	language:Java	class:MyMinHeap
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^public class MyMinHeap {$/;"	c	language:Java
@@ -180,7 +182,7 @@ removeEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void
 size	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int size;$/;"	f	language:Java	class:MyMinHeap	file:
 Snip	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Snip :vs ~\/.vim\/custom\/snippets\/<args>.snippets$/;"	c	language:Vim
 Snippets	//home/bshutt/dotfiles/files/vimrc	/^command! Snippets :vs ~\/.vim\/custom\/snippets\/.$/;"	c	language:Vim
-split	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public int[] split(int[] array) {$/;"	m	language:Java	class:Inversions
+split	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public int[][] split(int[] array) {$/;"	m	language:Java	class:Inversions
 Trun	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Trun VimuxRunCommand("<args>")$/;"	c	language:Vim
 w	//home/bshutt/dotfiles/files/vimrc	/^map <silent> w <Plug>CamelCaseMotion_w$/;"	m	language:Vim
 W	//home/bshutt/dotfiles/files/vimrc	/^noremap W \$$/;"	m	language:Vim
