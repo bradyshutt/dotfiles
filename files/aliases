@@ -45,13 +45,15 @@ alias dirs="dirs -v"
 alias p="pushd"
 alias o="popd"
 
-alias gs="git status"
 alias gits="git status"
 alias gita="git add"
-alias ga="git add"
 alias gitpu="git push"
 alias gitc="git commit -m"
+
 alias gc="git commit -m"
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
 
 alias mars="java -jar ~/Mars.jar &"
 alias nodefix="nvm use --delete-prefix v6.10.2"
