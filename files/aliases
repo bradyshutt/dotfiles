@@ -1,3 +1,7 @@
+PLATFORM='unknown'
+if   [[ `uname` == 'Linux'   ]]; then PLATFORM='linux'
+elif [[ `uname` == 'FreeBSD' ]]; then PLATFORM='mac'
+fi
 
 alias h="history | $PAGER"
 alias ls="ls"
@@ -37,13 +41,17 @@ alias "cd..4"="cd ../../../.."
 alias "cd..5"="cd ../../../../.."
 alias "cd..6"="cd ../../../../../.."
 
+alias dirs="dirs -v"
+alias p="pushd"
+alias o="popd"
+
 alias mars="java -jar ~/Mars.jar &"
 alias nodefix="nvm use --delete-prefix v6.10.2"
 
 # -- Work ----------------------------------------------
 
-echo $PLATFORM
 if [[ $PLATFORM == 'mac' ]] ; then 
+  echo "Also using mac aliases"
 
   alias sshprod="ssh xyztextbooks@74.82.130.195"
 
