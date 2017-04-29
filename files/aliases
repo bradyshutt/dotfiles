@@ -33,3 +33,4 @@ alias "cd..5"="cd ../../../../.."
 alias "cd..6"="cd ../../../../../.."
 
 alias mars="java -jar ~/Mars.jar &"
+alias nodefix="nvm use --delete-prefix v6.10.2"
