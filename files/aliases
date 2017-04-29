@@ -1,21 +1,27 @@
 PLATFORM='unknown'
 if   [[ `uname` == 'Linux'   ]]; then PLATFORM='linux'
-elif [[ `uname` == 'FreeBSD' ]]; then PLATFORM='mac'
-fi
+elif [[ `uname` == 'FreeBSD' ]]; then PLATFORM='mac' ; fi
 
 alias h="history | $PAGER"
-alias ls="ls"
-alias dir="dir"
-alias vdir="vdir"
-alias grep="grep"
-alias fgrep="fgrep"
-alias egrep="egrep"
-# alias ls="ls --color=auto"
-# alias dir="dir --color=auto"
-# alias vdir="vdir --color=auto"
-# alias grep="grep --color=auto"
-# alias fgrep="fgrep --color=auto"
-# alias egrep="egrep --color=auto"
+
+
+
+if [[ $PLATFORM == 'linux' ]] ; then 
+  alias ls="ls --color=auto"
+  alias dir="dir --color=auto"
+  alias vdir="vdir --color=auto"
+  alias grep="grep --color=auto"
+  alias fgrep="fgrep --color=auto"
+  alias egrep="egrep --color=auto"
+elif [[ $PLATFORM == 'mac' ]] ; then 
+  alias ls="ls"
+  alias dir="dir"
+  alias vdir="vdir"
+  alias grep="grep"
+  alias fgrep="fgrep"
+  alias egrep="egrep"
+fi
+
 
 alias ll="ls -al"
 alias l="ls -l"
