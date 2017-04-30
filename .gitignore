@@ -3,3 +3,4 @@
 files/vim/bundle
 files/vim/bundle/*
 files/vim/bundle/**
+!files/vim/bundle/Vundle.vim
