@@ -62,6 +62,7 @@ let g:pymode_python = 'python3'
 command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode
 command! Indent :normal myggvG=`y:delm yzz
 command! Snippets :vs ~/.vim/custom/snippets/.
+command! SpellCheck :setlocal spell spelllang=en_us
 command! -nargs=1 Snip :vs ~/.vim/custom/snippets/<args>.snippets
 "command! -nargs=1 Rn :call VimuxRunCommand(<args>)<CR>
 command! -nargs=1 Trun VimuxRunCommand("<args>")
@@ -69,6 +70,10 @@ nnoremap <Leader>R :Trun
 
 " Autocmds 
 autocmd BufRead,BufNewFile *.note set filetype=notes
+autocmd BufRead,BufNewFile *.tex set filetype=tex
+autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
+autocmd BufRead,BufNewFile *.tex PencilSoft
+autocmd BufRead,BufNewFile *.tex set synmaxcol=1060
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 "autocmd BufRead,BufNewFile *.less set filetype=css
 

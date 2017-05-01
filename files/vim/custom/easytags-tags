@@ -184,6 +184,7 @@ removeEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void
 size	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int size;$/;"	f	language:Java	class:MyMinHeap	file:
 Snip	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Snip :vs ~\/.vim\/custom\/snippets\/<args>.snippets$/;"	c	language:Vim
 Snippets	//home/bshutt/dotfiles/files/vimrc	/^command! Snippets :vs ~\/.vim\/custom\/snippets\/.$/;"	c	language:Vim
+SpellCheck	//home/bshutt/dotfiles/files/vimrc	/^command! SpellCheck :setlocal spell spelllang=en_us$/;"	c	language:Vim
 split	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int[][] split(int[] array) {$/;"	m	language:Java	class:Inversions	file:
 Trun	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Trun VimuxRunCommand("<args>")$/;"	c	language:Vim
 w	//home/bshutt/dotfiles/files/vimrc	/^map <silent> w <Plug>CamelCaseMotion_w$/;"	m	language:Vim
