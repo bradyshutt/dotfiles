@@ -67,6 +67,7 @@ DEFAULT_CAPACITY	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^ 
 degree	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public int degree[] = new int [MAXV+1];$/;"	f	language:Java	class:GraphStart
 deleteMin	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int deleteMin() {$/;"	m	language:Java	class:MyMinHeap
 directed	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public boolean directed;$/;"	f	language:Java	class:GraphStart
+divideConqMaxSum	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^  public static int divideConqMaxSum(int low,int high, int[] b){$/;"	m	language:Java	class:MaxSumContig
 driftDown	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public void driftDown(int index) {$/;"	m	language:Java	class:MyMinHeap
 driftUp	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public void driftUp(int index) {$/;"	m	language:Java	class:MyMinHeap
 driftup	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public void driftup(int index) {$/;"	m	language:Java	class:MyMinHeap
@@ -163,11 +164,12 @@ M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap M J$/;"	m	language:Vim
 main	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^  public static void main(String[] args) {$/;"	m	language:Java	class:Driver
 main	/home/bshutt/school/spring2017/cpe349/lab2-2/Driver.java	/^  public static void main (String[] args) {$/;"	m	language:Java	class:Driver
 main	/home/bshutt/school/spring2017/cpe349/lab3-1/Driver.java	/^  public static void main(String[] args) {$/;"	m	language:Java	class:Driver
+main	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^  public static void main(String[] args) throws FileNotFoundException {   $/;"	m	language:Java	class:MaxSumContig
 mapleader	//home/bshutt/dotfiles/files/vimrc	/^let mapleader=","$/;"	v	language:Vim
 MAXDEGREE	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXDEGREE = 50;$/;"	f	language:Java	class:GraphStart
+MaxSumContig	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^public class MaxSumContig  {     $/;"	c	language:Java
 MAXV	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXV = 100;$/;"	f	language:Java	class:GraphStart
-mergeCount	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int mergeCount(int[] left, int[] right) {$/;"	m	language:Java	class:Inversions	file:
-mergeCount2	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int mergeCount2(int[] left, int[] right) {$/;"	m	language:Java	class:Inversions	file:
+mergeCount	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int mergeCount(int[] left, int[] right, int[] res) {$/;"	m	language:Java	class:Inversions	file:
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap() {$/;"	m	language:Java	class:MyMinHeap
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap(int capacity) {$/;"	m	language:Java	class:MyMinHeap
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^public class MyMinHeap {$/;"	c	language:Java
@@ -182,7 +184,7 @@ removeEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void
 size	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int size;$/;"	f	language:Java	class:MyMinHeap	file:
 Snip	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Snip :vs ~\/.vim\/custom\/snippets\/<args>.snippets$/;"	c	language:Vim
 Snippets	//home/bshutt/dotfiles/files/vimrc	/^command! Snippets :vs ~\/.vim\/custom\/snippets\/.$/;"	c	language:Vim
-split	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public int[][] split(int[] array) {$/;"	m	language:Java	class:Inversions
+split	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int[][] split(int[] array) {$/;"	m	language:Java	class:Inversions	file:
 Trun	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Trun VimuxRunCommand("<args>")$/;"	c	language:Vim
 w	//home/bshutt/dotfiles/files/vimrc	/^map <silent> w <Plug>CamelCaseMotion_w$/;"	m	language:Vim
 W	//home/bshutt/dotfiles/files/vimrc	/^noremap W \$$/;"	m	language:Vim
