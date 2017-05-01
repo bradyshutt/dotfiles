@@ -1,5 +1,6 @@
 
 
+
 #[[ $- != *i* ]] && return
 
 # Path to your oh-my-zsh installation.
@@ -38,8 +39,8 @@ EDITOR=vim
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="Agnoster"
-# ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="Agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 # source ~/.oh-my-zsh/custom/second.zsh-theme
 
 zstyle ':completion:*' completer _expand _complete _correct _approximate
@@ -94,7 +95,8 @@ plugins=(git z zsh-nvm)
   #export PATH="/home/bshutt/bin:/bin:/usr/bin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+
+[ -d $ZSH ] && source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 
 # You may need to manually set your language environment
