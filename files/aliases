@@ -62,12 +62,9 @@ alias ga="git add"
 alias gp="git push"
 
 alias mars="java -jar ~/Mars.jar &"
-<<<<<<< HEAD
 
 #alias git-check="git status && git remote -v update && git status -uno | grep up-to-date"
-=======
 alias nodefix="nvm use --delete-prefix v6.10.2"
->>>>>>> 3ed3098fa0908450e7e1300c747c8f56596224ad
 
 # -- Work ----------------------------------------------
 
