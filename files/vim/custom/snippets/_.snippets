@@ -3,7 +3,7 @@
 # (c) holds no legal value ;)
 snippet c)
 	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${1:`g:snips_author`}. All Rights Reserved.
-snippet date
+snippet datenow
 	`strftime("%Y-%m-%d")`
 snippet ddate
 	`strftime("%B %d, %Y")`
@@ -20,18 +20,6 @@ snippet lorem
 	DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 	TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 	OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-	${0}
-snippet @title
-	@TITLE:[${1}] ${0}
-snippet title
-	*****${2}
-	* ${1} *
-	*****${2}
-	${0}
-snippet ttl
-	***** 
-	* ${1} *
-	***** 
 	${0}
 snippet ,
 	[${0}]

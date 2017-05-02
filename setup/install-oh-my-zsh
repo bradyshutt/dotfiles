@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+mkdir -p ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+
+
+mkdir -p $HOME/.fonts
+mv PowerlineSymbols.otf ~/.fonts/
+
+fc-cache -vf ~/.fonts 
+
+mkdir -p $HOME/.config/fontconfig/conf.d/
+mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
+pushd $HOME/tmp
+  git clone https://github.com/powerline/fonts.git
+  pushd fonts
+    ./install.sh
+  popd
+  rm -rf fonts
+popd
+
+

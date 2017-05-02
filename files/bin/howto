@@ -48,6 +48,27 @@ elif [[ $1 == "vim-diff" ]] ; then
   echo -e "\t\t:diffget <bufspec>"
   echo -e ""
   
-fi 
+elif [[ $1 == "restart" ]]; then
+  echo "sudo poweroff --reboot --no-wall"
 
+elif [[ $1 == "shutdown" ]]; then
+  echo "sudo poweroff --no-wall"
 
+elif [[ $1 == "mount-drive" ]]; then
+  echo -e "\n\tFind what the drive is called (/dev/sdb1)"
+  echo -e "\t\tsudo fdisk -l"
+  echo -e "\n\tCreate a mount point"
+  echo -e "\t\tsudo mkdir /media/passport"
+  echo -e "\n\tMount drive"
+  echo -e "\t\tsudo mount /dev/sdb1 /media/passport"
+  echo -e "\n\tUnmount when done"
+  echo -e "\t\tsudo umount /media/passport\n"
+
+elif [[ $1 == "deb" ]] ; then 
+	echo -e "\n  Install .deb"
+	echo -e "    $ sudo dpkg -i my.deb"
+	echo -e "\n  If there's unresolved dependencies"
+	echo -e "    $ sudo apt-get install -f"
+	echo -e ""
+
+fi

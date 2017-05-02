@@ -1,11 +1,27 @@
+PLATFORM='unknown'
+if   [[ `uname` == 'Linux'   ]]; then PLATFORM='linux'
+elif [[ `uname` == 'FreeBSD' ]]; then PLATFORM='mac' ; fi
 
 alias h="history | $PAGER"
-alias ls="ls"
-alias dir="dir"
-alias vdir="vdir"
-alias grep="grep"
-alias fgrep="fgrep"
-alias egrep="egrep"
+
+
+
+if [[ $PLATFORM == 'linux' ]] ; then 
+  alias ls="ls --color=auto"
+  alias dir="dir --color=auto"
+  alias vdir="vdir --color=auto"
+  alias grep="grep --color=auto"
+  alias fgrep="fgrep --color=auto"
+  alias egrep="egrep --color=auto"
+elif [[ $PLATFORM == 'mac' ]] ; then 
+  alias ls="ls"
+  alias dir="dir"
+  alias vdir="vdir"
+  alias grep="grep"
+  alias fgrep="fgrep"
+  alias egrep="egrep"
+fi
+
 
 alias ll="ls -al"
 alias l="ls -l"
@@ -31,39 +47,61 @@ alias "cd..4"="cd ../../../.."
 alias "cd..5"="cd ../../../../.."
 alias "cd..6"="cd ../../../../../.."
 
+alias dirs="dirs -v"
+alias p="pushd"
+alias o="popd"
+
+alias gits="git status"
+alias gita="git add"
+alias gitpu="git push"
+alias gitc="git commit -m"
+
+alias gc="git commit -m"
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
+
 alias mars="java -jar ~/Mars.jar &"
+<<<<<<< HEAD
 
 #alias git-check="git status && git remote -v update && git status -uno | grep up-to-date"
+=======
+alias nodefix="nvm use --delete-prefix v6.10.2"
+>>>>>>> 3ed3098fa0908450e7e1300c747c8f56596224ad
 
 # -- Work ----------------------------------------------
 
-alias sshprod="ssh xyztextbooks@74.82.130.195"
+if [[ $PLATFORM == 'mac' ]] ; then 
+  echo "Also using mac aliases"
 
-alias vd="cd-laravel_box && vagrant destroy"
-alias vu="cd-laravel_box && vagrant up"
-alias vp="cd-laravel_box && vagrant provision"
-alias vstat="vagrant status"
-#alias vssh="cd-laravel_box && vagrant ssh"
-alias vssh="ssh -p 2222 vagrant@localhost"
-alias vssh-s="ssh -p 2222 vagrant@localhost -t \"cd /var/www/sails/xyztextbooks_sails_framework/ ; /bin/bash\""
-alias vssh-sl="ssh -p 2222 vagrant@localhost -t \"cd /var/www/sails/xyztextbooks_sails_framework/ ; sails lift\""
+  alias sshprod="ssh xyztextbooks@74.82.130.195"
 
-alias cdw="cd ~/Documents/htdocs/xyz_websites"
+  alias vd="cd-laravel_box && vagrant destroy"
+  alias vu="cd-laravel_box && vagrant up"
+  alias vp="cd-laravel_box && vagrant provision"
+  alias vstat="vagrant status"
+  #alias vssh="cd-laravel_box && vagrant ssh"
+  alias vssh="ssh -p 2222 vagrant@localhost"
+  alias vssh-s="ssh -p 2222 vagrant@localhost -t \"cd /var/www/sails/xyztextbooks_sails_framework/ ; /bin/bash\""
+  alias vssh-sl="ssh -p 2222 vagrant@localhost -t \"cd /var/www/sails/xyztextbooks_sails_framework/ ; sails lift\""
 
-alias cd-laravel_box="cd ~/Documents/htdocs/mathtv_laravel_box"
-alias cd-lbox="cd ~/Documents/htdocs/mathtv_laravel_box"
-alias cd-fw="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/"
-alias cd-fw-xyz="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/xyztextbooks/"
-alias cd-fw-cms="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/xyz_cms/"
-alias cd-fw-admin="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/admin/"
-alias cd-fw-mathtv="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/mathtv/"
+  alias cdw="cd ~/Documents/htdocs/xyz_websites"
 
-alias cd-web-admin="cd ~/Documents/htdocs/xyz_websites/admin.mathtv.dev/"
-alias cd-web-admin-xyz="cd ~/Documents/htdocs/xyz_websites/admin.xyztextbooks.dev/"
-alias cd-web-mathtv="cd ~/Documents/htdocs/xyz_websites/www.mathtv.dev/"
-alias cd-web-xyz="cd ~/Documents/htdocs/xyz_websites/www.xyztextbooks.dev/"
+  alias cd-laravel_box="cd ~/Documents/htdocs/mathtv_laravel_box"
+  alias cd-lbox="cd ~/Documents/htdocs/mathtv_laravel_box"
+  alias cd-fw="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/"
+  alias cd-fw-xyz="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/xyztextbooks/"
+  alias cd-fw-cms="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/xyz_cms/"
+  alias cd-fw-admin="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/admin/"
+  alias cd-fw-mathtv="cd ~/Documents/htdocs/xyz_websites/xyz_framework/apps/mathtv/"
 
-alias cd-new="cd ~/Documents/htdocs/xyz_websites/MathTV-Website-3.0/"
+  alias cd-web-admin="cd ~/Documents/htdocs/xyz_websites/admin.mathtv.dev/"
+  alias cd-web-admin-xyz="cd ~/Documents/htdocs/xyz_websites/admin.xyztextbooks.dev/"
+  alias cd-web-mathtv="cd ~/Documents/htdocs/xyz_websites/www.mathtv.dev/"
+  alias cd-web-xyz="cd ~/Documents/htdocs/xyz_websites/www.xyztextbooks.dev/"
 
-alias mysql=/usr/local/mysql/bin/mysql
-alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+  alias cd-new="cd ~/Documents/htdocs/xyz_websites/MathTV-Website-3.0/"
+
+  alias mysql=/usr/local/mysql/bin/mysql
+  alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+fi

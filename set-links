@@ -41,6 +41,22 @@ elif [[ -d $HOME/.vim ]] ; then
 fi 
 ln -sf $FILES/vim $HOME/.vim
 
+# Only if .oh-my-zsh dir exists
+if [[ -d $HOME/.oh-my-zsh ]] ; then
+
+  # If custom dir exists in and is a link
+  if [[ -L $HOME/.oh-my-zsh/custom ]] ; then
+    rm $HOME/.oh-my-zsh/custom
+  # Else If custom dir exists and is a directory
+  elif [[ -d $HOME/.oh-my-zsh/custom ]] ; then
+    rm -rf $OLD/oh-my-zsh-custom
+    mv -f $HOME/.oh-my-zsh/custom $OLD/oh-my-zsh-custom
+  fi 
+  ln -sf $FILES/oh-my-zsh-custom $HOME/.oh-my-zsh/custom
+fi
+
+# if [[ -d $HOME/.vim/colors ]] ; then mv $HOME/.vim/colors/ $OLD ; fi
+
 # if [[ -d $HOME/.vim/colors ]] ; then mv $HOME/.vim/colors/ $OLD ; fi
 # ln -sf $FILES/vim-colors $HOME/.vim/colors
 
