@@ -1,6 +1,9 @@
+
 PLATFORM='unknown'
 if   [[ `uname` == 'Linux'   ]]; then PLATFORM='linux'
-elif [[ `uname` == 'FreeBSD' ]]; then PLATFORM='mac' ; fi
+elif [[ `uname` == 'FreeBSD' ]]; then PLATFORM='mac'
+elif [[ `uname` == 'Darwin' ]]; then PLATFORM='mac'
+fi
 
 alias h="history | $PAGER"
 
@@ -69,7 +72,6 @@ alias nodefix="nvm use --delete-prefix v6.10.2"
 # -- Work ----------------------------------------------
 
 if [[ $PLATFORM == 'mac' ]] ; then 
-  echo "Also using mac aliases"
 
   alias sshprod="ssh xyztextbooks@74.82.130.195"
 

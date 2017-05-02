@@ -272,8 +272,8 @@ nnoremap M J
 
 
 " Movement Keybindings
-noremap <silent> J }
-noremap <silent> K {
+noremap <silent> J 5j
+noremap <silent> K 5k
 noremap L ;
 noremap H ,
 "noremap <silent> J :keepjumps normal }<CR>

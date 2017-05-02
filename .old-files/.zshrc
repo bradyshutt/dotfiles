@@ -1,1 +1,1 @@
-/home/bshutt/dotfiles/files/zshrc
+/Users/bradyshutt/dotfiles/files/zshrc

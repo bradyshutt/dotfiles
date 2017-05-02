@@ -1,1 +1,1 @@
-/home/bshutt/dotfiles/files/bashrc
+/Users/bradyshutt/dotfiles/files/bashrc
