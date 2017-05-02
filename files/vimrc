@@ -73,14 +73,13 @@ command! CopyFile :w !pbcopy <CR><CR>
 
 " Autocmds 
 autocmd BufRead,BufNewFile *.note set filetype=notes
-<<<<<<< HEAD
+
 autocmd BufRead,BufNewFile *.mst set filetype=html
-=======
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.tex PencilSoft
 autocmd BufRead,BufNewFile *.tex set synmaxcol=1060
->>>>>>> 3ed3098fa0908450e7e1300c747c8f56596224ad
+
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 "autocmd BufRead,BufNewFile *.less set filetype=css
 

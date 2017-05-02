@@ -1,5 +1,6 @@
 *.swp
 .old-files/*
+.old-files/**
 files/vim/bundle
 files/vim/bundle/*
 files/vim/bundle/**
