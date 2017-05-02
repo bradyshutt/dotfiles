@@ -32,6 +32,9 @@ alias "cd..5"="cd ../../../../.."
 alias "cd..6"="cd ../../../../../.."
 
 alias mars="java -jar ~/Mars.jar &"
+
+#alias git-check="git status && git remote -v update && git status -uno | grep up-to-date"
+
 # -- Work ----------------------------------------------
 
 alias sshprod="ssh xyztextbooks@74.82.130.195"

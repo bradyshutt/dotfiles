@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo ""
+echo "   git remote -v update"
+echo ""
+
+git remote -v update
+
+echo ""
+echo "   git status -uno"
+echo ""
+
+git status -uno
+
+echo ""

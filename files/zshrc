@@ -10,11 +10,11 @@ PATH=/bin:/usr/bin:/usr/sbin
 [ -d ~/bin ] && PATH=~/bin:$PATH
 [ -d /usr/local/bin ] && PATH=$PATH:/usr/local/bin
 [ -d /usr/share/bin ] && PATH=$PATH:/usr/share/bin
-PATH=$PATH:/opt/jdk1.8.0_111/bin
-PATH=$PATH:$HOME/.local/bin
-PATH=$PATH:/opt/WebStorm-163.7743.25/bin
-PATH=$PATH:/opt/android-studio/bin
-PATH=$PATH:~/.nvm/versions/node/v6.9.1/bin
+[ -d /opt/jdk1.8.0_111/bin ] && PATH=$PATH:/opt/jdk1.8.0_111/bin
+[ -d $HOME/.local/bin ] && PATH=$PATH:$HOME/.local/bin
+[ -d /opt/WebStorm-163.7743.25/bin ] && PATH=$PATH:/opt/WebStorm-163.7743.25/bin
+[ -d /opt/android-studio/bin ] && PATH=$PATH:/opt/android-studio/bin
+[ -d $HOME/.nvm/versions/node/v6.9.1/bin ] && PATH=$PATH:$HOME/.nvm/versions/node/v6.9.1/bin
 PATH=$PATH:.
 export PATH=$PATH
 
@@ -38,11 +38,16 @@ EDITOR=vim
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="Agnoster"
+if [[ `uname` == 'Linux' ]] ; then
+  ZSH_THEME="Agnoster"
+elif [[ `uname` == 'Darwin' ]] ; then
+  ZSH_THEME="powerline2"
+fi
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 # source ~/.oh-my-zsh/custom/second.zsh-theme
 
 zstyle ':completion:*' completer _expand _complete _correct _approximate
+#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -121,13 +126,15 @@ source ~/.aliases
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export CLICOLOR=1;
+export LSCOLORS=exfxcxdxbxegedabagacad;
 
 setopt nohistverify
 # setopt histexpand
 
    
 # export CLASSPATH=/home/appnetix/LOG4J_HOME/log4j-1.2.16.jar
-export CLASSPATH=$CLASSPATH:/home/bshutt/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:.
+# export CLASSPATH=$CLASSPATH:/home/bshutt/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:.
 
 #tmon
 
@@ -180,6 +187,10 @@ export CLASSPATH=$CLASSPATH:/home/bshutt/.m2/repository/org/mongodb/bson/3.0.4/b
 #fi
 #
 #
+#export CLICOLOR=YES
+#export LSCOLORS="Gxfxcxdxbxegedabagacad"
+#LS_COLORS='no=00;37:fi=00:di=00;33:ln=04;36:pi=40;33:so=01;35:bd=40;33;01:'
+#export LS_COLORS
 
-export NVM_DIR="/home/bshutt/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
