@@ -38,6 +38,7 @@ Plugin 'mickaobrien/vim-stackoverflow'
 Plugin 'Dinduks/vim-java-get-set.git'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
 Plugin 'junegunn/vim-easy-align'
 "Plugin 'Valloric/YouCompleteMe.git'
 
@@ -62,16 +63,27 @@ let g:pymode_python = 'python3'
 command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode
 command! Indent :normal myggvG=`y:delm yzz
 command! Snippets :vs ~/.vim/custom/snippets/.
+command! SpellCheck :setlocal spell spelllang=en_us
 command! -nargs=1 Snip :vs ~/.vim/custom/snippets/<args>.snippets
 "command! -nargs=1 Rn :call VimuxRunCommand(<args>)<CR>
 command! -nargs=1 Trun VimuxRunCommand("<args>")
 nnoremap <Leader>R :Trun 
+command! Copy :.w !pbcopy <CR><CR>
+command! CopyFile :w !pbcopy <CR><CR>
 
 " Autocmds 
 autocmd BufRead,BufNewFile *.note set filetype=notes
+
+autocmd BufRead,BufNewFile *.mst set filetype=html
+autocmd BufRead,BufNewFile *.tex set filetype=tex
+autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
+autocmd BufRead,BufNewFile *.tex PencilSoft
+autocmd BufRead,BufNewFile *.tex set synmaxcol=1060
+
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 "autocmd BufRead,BufNewFile *.less set filetype=css
 
+set clipboard=unnamed
 
 " General Settings
 "nnoremap ? ,
@@ -89,7 +101,7 @@ let g:indentLine_char='.'
 colorscheme main
 set colorcolumn=81
 set rtp+=~/.vim/custom/
-"syntax match Tab /\t/
+syntax match Tab /\t/
 
 
 " Vimux
@@ -292,8 +304,6 @@ nnoremap <c-right> g,
 nnoremap <c-left> g;
 nnoremap > g;
 nnoremap < g,
-"inoremap <C-@> <C-Space>
-"inoremap <C-Space> <right><right>
 
 
 

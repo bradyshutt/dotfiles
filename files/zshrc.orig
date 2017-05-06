@@ -39,14 +39,17 @@ EDITOR=vim
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+<<<<<<< HEAD
 if [[ `uname` == 'Linux' ]] ; then
   ZSH_THEME="Agnoster"
 elif [[ `uname` == 'Darwin' ]] ; then
-   ZSH_THEME="powerline2"
-  # ZSH_THEME="powerlevel9k/powerlevel9k"
+  ZSH_THEME="powerline2"
 fi
 # ZSH_THEME="powerlevel9k/powerlevel9k"
+=======
 #ZSH_THEME="Agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+>>>>>>> 3ed3098fa0908450e7e1300c747c8f56596224ad
 # source ~/.oh-my-zsh/custom/second.zsh-theme
 
 zstyle ':completion:*' completer _expand _complete _correct _approximate

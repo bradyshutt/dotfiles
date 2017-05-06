@@ -14,6 +14,11 @@ if [[ $1 == "git" ]] ; then
   echo -e "\t\tgit config --global merge.tool vimdiff"
   echo -e "\t\tgit config --global user.name <name>"
   echo -e "\t\tgit config --global user.email <email>"
+
+  echo -e "\n\tCheck for changes in origin"
+  echo -e "\t\tgit remote -v update"
+  echo -e "\t\tgit status -uno"
+
   echo -e "\n\tGit fetch merge flow"
   echo -e "\t\tFetch"
   echo -e "\t\t\tgit fetch"

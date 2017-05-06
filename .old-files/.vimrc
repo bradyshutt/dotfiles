@@ -1,1 +1,1 @@
-/home/bshutt/dotfiles/files/vimrc
+/Users/bradyshutt/dotfiles/files/vimrc
