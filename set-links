@@ -19,6 +19,9 @@ mkdir -p $OLD
 if [[ -a $HOME/.vimrc ]] ; then mv $HOME/.vimrc $OLD ; fi
 ln -sf $FILES/vimrc $HOME/.vimrc
 
+if [[ -a $HOME/.ideavimrc ]] ; then mv $HOME/.ideavimrc $OLD ; fi
+ln -sf $FILES/ideavimrc $HOME/.ideavimrc
+
 if [[ -a $HOME/.zshrc ]] ; then mv $HOME/.zshrc $OLD ; fi
 ln -sf $FILES/zshrc $HOME/.zshrc
 
