@@ -40,7 +40,7 @@ EDITOR=vim
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 if [[ `uname` == 'Linux' ]] ; then
-  ZSH_THEME="Agnoster"
+  ZSH_THEME="agnoster"
 elif [[ `uname` == 'Darwin' ]] ; then
    ZSH_THEME="powerline2"
   # ZSH_THEME="powerlevel9k/powerlevel9k"
