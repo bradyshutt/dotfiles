@@ -79,6 +79,9 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.tex PencilSoft
 autocmd BufRead,BufNewFile *.tex set synmaxcol=1060
+autocmd BufRead,BufNewFile *.java set tabstop=3
+autocmd BufRead,BufNewFile *.java set shiftwidth=3
+
 
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 "autocmd BufRead,BufNewFile *.less set filetype=css
@@ -341,6 +344,7 @@ nnoremap <Leader>c :VimuxCloseRunner<CR>
 nnoremap <Leader>T :TagbarOpen<CR>
 nnoremap <Leader>u :GundoToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap gn :NERDTreeFocus<CR>
 nnoremap <Leader>m :MinimapToggle<CR>
 nnoremap <Leader>i :Indent<CR>
 nnoremap <Leader>. :nohlsearch<CR>
