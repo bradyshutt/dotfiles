@@ -1,6 +1,19 @@
 #!/bin/bash
 
-if [[ $1 == "git" ]] ; then 
+function main {
+  case "$1" in
+    git)          git ;;
+    vim-diff)     vim-diff ;;
+    restart)      echo "sudo poweroff --reboot --no-wall" ;;
+    shutdown)     echo "sudo poweroff --no-wall" ;;
+    mount-drive)  mount-drive ;;
+    deb)          deb ;;
+    *)            echo "Command not found." 
+  esac
+}
+
+
+function git {
   echo -e "\n\tSee git logs"
   echo -e "\t\tgit log"
   echo -e "\t\tgit log --pretty=oneline"
@@ -31,8 +44,10 @@ if [[ $1 == "git" ]] ; then
   echo -e "\t\tReset (Fix mistakes from merge)"
   echo -e "\t\t\tgit reset --hard"
   echo -e ""
+}
 
-elif [[ $1 == "vim-diff" ]] ; then
+
+function vim-diff {
   echo -e "\n\tProcess"
   echo -e "\t\tgit fetch"
   echo -e "\t\tgit log origin/master"
@@ -47,14 +62,9 @@ elif [[ $1 == "vim-diff" ]] ; then
   echo -e "\n\tAccept "
   echo -e "\t\t:diffget <bufspec>"
   echo -e ""
-  
-elif [[ $1 == "restart" ]]; then
-  echo "sudo poweroff --reboot --no-wall"
+}
 
-elif [[ $1 == "shutdown" ]]; then
-  echo "sudo poweroff --no-wall"
-
-elif [[ $1 == "mount-drive" ]]; then
+function mount-drive {
   echo -e "\n\tFind what the drive is called (/dev/sdb1)"
   echo -e "\t\tsudo fdisk -l"
   echo -e "\n\tCreate a mount point"
@@ -63,12 +73,28 @@ elif [[ $1 == "mount-drive" ]]; then
   echo -e "\t\tsudo mount /dev/sdb1 /media/passport"
   echo -e "\n\tUnmount when done"
   echo -e "\t\tsudo umount /media/passport\n"
+}
 
-elif [[ $1 == "deb" ]] ; then 
-	echo -e "\n  Install .deb"
-	echo -e "    $ sudo dpkg -i my.deb"
-	echo -e "\n  If there's unresolved dependencies"
-	echo -e "    $ sudo apt-get install -f"
-	echo -e ""
+function deb {
+  echo -e "\n  Install .deb"
+  echo -e "    $ sudo dpkg -i my.deb"
+  echo -e "\n  If there's unresolved dependencies"
+  echo -e "    $ sudo apt-get install -f"
+  echo -e ""
+}
 
-fi
+ng-cli {
+  echo -e "\n  Component Inline Style"
+  echo -e "\t  --inline-style (or -is)"
+  echo -e "\n  Component Inline Template"
+  echo -e "\t  --inline-template (or -it)"
+  echo -e "\n  Component Flat "
+  echo -e "\t  --flat"
+  echo -e "\n  Component No Spec "
+  echo -e "\t  --spec false"
+}
+
+
+main "$@"
+
+

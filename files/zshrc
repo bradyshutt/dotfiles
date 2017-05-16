@@ -11,11 +11,10 @@ PATH=/bin:/usr/bin:/usr/sbin
 [ -d ~/bin ] && PATH=~/bin:$PATH
 [ -d /usr/local/bin ] && PATH=$PATH:/usr/local/bin
 [ -d /usr/share/bin ] && PATH=$PATH:/usr/share/bin
-[ -d /opt/jdk1.8.0_111/bin ] && PATH=$PATH:/opt/jdk1.8.0_111/bin
+[ -d /opt/jdk1.8.0_131/bin ] && PATH=$PATH:/opt/jdk1.8.0_131/bin
 [ -d $HOME/.local/bin ] && PATH=$PATH:$HOME/.local/bin
 [ -d /opt/WebStorm-163.7743.25/bin ] && PATH=$PATH:/opt/WebStorm-163.7743.25/bin
 [ -d /opt/android-studio/bin ] && PATH=$PATH:/opt/android-studio/bin
-[ -d $HOME/.nvm/versions/node/v6.9.1/bin ] && PATH=$PATH:$HOME/.nvm/versions/node/v6.9.1/bin
 PATH=$PATH:.
 export PATH=$PATH
 
