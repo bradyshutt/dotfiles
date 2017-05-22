@@ -54,30 +54,9 @@ b	//home/bshutt/dotfiles/files/vimrc	/^map <silent> b <Plug>CamelCaseMotion_b$/;
 B	//home/bshutt/dotfiles/files/vimrc	/^nnoremap B ^$/;"	m	language:Vim
 b:javagetset_getterTemplate	//home/bshutt/dotfiles/files/vimrc	/^let b:javagetset_getterTemplate=$/;"	v	language:Vim
 b:javagetset_setterTemplate	//home/bshutt/dotfiles/files/vimrc	/^let b:javagetset_setterTemplate=$/;"	v	language:Vim
-bfs	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  private int[] bfs(int vertex) {$/;"	m	language:Java	class:ConnectCheck	file:
-BipartiteCheck	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^  public BipartiteCheck(GraphStart gs) {$/;"	m	language:Java	class:BipartiteCheck
-BipartiteCheck	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^public class BipartiteCheck {$/;"	c	language:Java
-buildHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean buildHeap(int[] array) {$/;"	m	language:Java	class:MyMinHeap
-capacity	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int capacity;$/;"	f	language:Java	class:MyMinHeap	file:
-components	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  private int[][] components;$/;"	f	language:Java	class:ConnectCheck	file:
-ConnectCheck	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  public ConnectCheck(GraphStart gs) {$/;"	m	language:Java	class:ConnectCheck
-ConnectCheck	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^public class ConnectCheck {$/;"	c	language:Java
-data	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int[] data; $/;"	f	language:Java	class:MyMinHeap	file:
-DEFAULT_CAPACITY	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int DEFAULT_CAPACITY = 50;$/;"	f	language:Java	class:MyMinHeap	file:
-degree	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public int degree[] = new int [MAXV+1];$/;"	f	language:Java	class:GraphStart
-deleteMin	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int deleteMin() {$/;"	m	language:Java	class:MyMinHeap
-directed	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public boolean directed;$/;"	f	language:Java	class:GraphStart
-divideConqMaxSum	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^  public static int divideConqMaxSum(int low,int high, int[] b){$/;"	m	language:Java	class:MaxSumContig
-driftDown	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public void driftDown(int index) {$/;"	m	language:Java	class:MyMinHeap
-driftUp	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public void driftUp(int index) {$/;"	m	language:Java	class:MyMinHeap
-driftup	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public void driftup(int index) {$/;"	m	language:Java	class:MyMinHeap
-Driver	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^  public Driver() { }$/;"	m	language:Java	class:Driver
-Driver	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^public class Driver {$/;"	c	language:Java
-Driver	/home/bshutt/school/spring2017/cpe349/lab2-2/Driver.java	/^public class Driver {$/;"	c	language:Java
-Driver	/home/bshutt/school/spring2017/cpe349/lab3-1/Driver.java	/^public class Driver {$/;"	c	language:Java
+Copy	//home/bshutt/dotfiles/files/vimrc	/^command! Copy :.w !pbcopy <CR><CR>$/;"	c	language:Vim
+CopyFile	//home/bshutt/dotfiles/files/vimrc	/^command! CopyFile :w !pbcopy <CR><CR>$/;"	c	language:Vim
 e	//home/bshutt/dotfiles/files/vimrc	/^map <silent> e <Plug>CamelCaseMotion_e$/;"	m	language:Vim
-edges	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public ArrayList<Integer>[] edges = new ArrayList[MAXV+1];$/;"	f	language:Java	class:GraphStart
-findMin	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int findMin() {$/;"	m	language:Java	class:MyMinHeap
 g2M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap g2M :Man 2 <cword><CR>$/;"	m	language:Vim
 g3M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap g3M :Man 3 <cword><CR>$/;"	m	language:Vim
 g:ctrlp_custom_ignore	//home/bshutt/dotfiles/files/vimrc	/^let g:ctrlp_custom_ignore = '\\.(git\\|class\\|swp\\|zip\\|swp)$'$/;"	v	language:Vim
@@ -113,21 +92,15 @@ g:VimuxHeight	//home/bshutt/dotfiles/files/vimrc	/^let g:VimuxHeight = "37"$/;"	
 g:VimuxOrientation	//home/bshutt/dotfiles/files/vimrc	/^let g:VimuxOrientation = "h"$/;"	v	language:Vim
 g:zv_disable_mapping	//home/bshutt/dotfiles/files/vimrc	/^let g:zv_disable_mapping = 1$/;"	v	language:Vim
 ge	//home/bshutt/dotfiles/files/vimrc	/^map <silent> ge <Plug>CamelCaseMotion_ge$/;"	m	language:Vim
-getComponents	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  public int[][] getComponents() {$/;"	m	language:Java	class:ConnectCheck
-getHeapCap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int getHeapCap() {$/;"	m	language:Java	class:MyMinHeap
-getHeapSize	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int getHeapSize() {$/;"	m	language:Java	class:MyMinHeap
 gjb	//home/bshutt/dotfiles/files/vimrc	/^noremap gjb :InsertBothGetterSetter<CR>$/;"	m	language:Vim
 gjg	//home/bshutt/dotfiles/files/vimrc	/^noremap gjg :InsertGetterOnly<CR>$/;"	m	language:Vim
 gjs	//home/bshutt/dotfiles/files/vimrc	/^noremap gjs :InsertSetterOnly<CR>$/;"	m	language:Vim
 gM	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gM :Man <cword><CR>$/;"	m	language:Vim
 gM	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gM :Man <cword><CR>$/;"	m	language:Vim
 gm	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gm `$/;"	m	language:Vim
+gn	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gn :NERDTreeFocus<CR>$/;"	m	language:Vim
 gO	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gO :CtrlP<CR>$/;"	m	language:Vim
-GraphStart	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  GraphStart() {$/;"	m	language:Java	class:GraphStart
-GraphStart	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^class GraphStart {$/;"	c	language:Java
 grt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap grt :!ctags -R . <CR><CR>g<c-]>$/;"	m	language:Vim
-gs	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^  private GraphStart gs;$/;"	f	language:Java	class:BipartiteCheck	file:
-gs	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  private GraphStart gs;$/;"	f	language:Java	class:ConnectCheck	file:
 gsh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsh :leftabove vnew<CR> $/;"	m	language:Vim
 gsj	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsj :rightbelow new<CR> $/;"	m	language:Vim
 gsk	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsk :leftabove new<CR> $/;"	m	language:Vim
@@ -137,23 +110,17 @@ gtc	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtc :tabnew<CR>$/;"	m	language
 gth	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gth :tabprevious<CR>$/;"	m	language:Vim
 gtl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtl :tabnext<CR>$/;"	m	language:Vim
 gtn	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtn :tabnew<CR>$/;"	m	language:Vim
+gtsh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsh <c-w>h$/;"	m	language:Vim
+gtsj	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsj <c-w>j$/;"	m	language:Vim
+gtsk	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsk <c-w>k$/;"	m	language:Vim
+gtsl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsl <c-w>l$/;"	m	language:Vim
 gtt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtt g<c-]>$/;"	m	language:Vim
 gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^nmap gz<CR> <Plug>Zeavim$/;"	m	language:Vim
 gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^vmap gz<CR> <Plug>ZVVisSelection$/;"	m	language:Vim
 gzZ	//home/bshutt/dotfiles/files/vimrc	/^nmap gzZ <Plug>ZVKeyDocset<c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w><c-w>$/;"	m	language:Vim
 gzz	//home/bshutt/dotfiles/files/vimrc	/^nmap gzz <Plug>ZVKeyDocset<CR>$/;"	m	language:Vim
 H	//home/bshutt/dotfiles/files/vimrc	/^noremap H ,$/;"	m	language:Vim
-heapSortIncreasing	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int[] heapSortIncreasing(int[] array) {$/;"	m	language:Java	class:MyMinHeap
 Indent	//home/bshutt/dotfiles/files/vimrc	/^command! Indent :normal myggvG=`y:delm yzz$/;"	c	language:Vim
-insert	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean insert(int element) {$/;"	m	language:Java	class:MyMinHeap
-insertEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void insertEdge(int x, int y, boolean directed) {$/;"	m	language:Java	class:GraphStart
-invCounter	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public int invCounter(int[] ranking) {$/;"	m	language:Java	class:Inversions
-Inversions	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public Inversions() {$/;"	m	language:Java	class:Inversions
-Inversions	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^public class Inversions {$/;"	c	language:Java
-isBipartite	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^  public boolean isBipartite() {$/;"	m	language:Java	class:BipartiteCheck
-isConnected	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  public boolean isConnected() {$/;"	m	language:Java	class:ConnectCheck
-isEmpty	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean isEmpty() {$/;"	m	language:Java	class:MyMinHeap
-isFull	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean isFull() {$/;"	m	language:Java	class:MyMinHeap
 J	//home/bshutt/dotfiles/files/vimrc	/^noremap <silent> J 5j$/;"	m	language:Vim
 jk	//home/bshutt/dotfiles/files/vimrc	/^inoremap jk <esc>$/;"	m	language:Vim
 Jk	//home/bshutt/dotfiles/files/vimrc	/^inoremap Jk <esc>$/;"	m	language:Vim
@@ -161,31 +128,12 @@ jl	//home/bshutt/dotfiles/files/vimrc	/^inoremap jl <esc><right>a$/;"	m	language
 K	//home/bshutt/dotfiles/files/vimrc	/^noremap <silent> K 5k$/;"	m	language:Vim
 L	//home/bshutt/dotfiles/files/vimrc	/^noremap L ;$/;"	m	language:Vim
 M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap M J$/;"	m	language:Vim
-main	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^  public static void main(String[] args) {$/;"	m	language:Java	class:Driver
-main	/home/bshutt/school/spring2017/cpe349/lab2-2/Driver.java	/^  public static void main (String[] args) {$/;"	m	language:Java	class:Driver
-main	/home/bshutt/school/spring2017/cpe349/lab3-1/Driver.java	/^  public static void main(String[] args) {$/;"	m	language:Java	class:Driver
-main	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^  public static void main(String[] args) throws FileNotFoundException {   $/;"	m	language:Java	class:MaxSumContig
 mapleader	//home/bshutt/dotfiles/files/vimrc	/^let mapleader=","$/;"	v	language:Vim
-MAXDEGREE	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXDEGREE = 50;$/;"	f	language:Java	class:GraphStart
-MaxSumContig	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^public class MaxSumContig  {     $/;"	c	language:Java
-MAXV	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXV = 100;$/;"	f	language:Java	class:GraphStart
-mergeCount	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int mergeCount(int[] left, int[] right, int[] res) {$/;"	m	language:Java	class:Inversions	file:
-MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap() {$/;"	m	language:Java	class:MyMinHeap
-MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap(int capacity) {$/;"	m	language:Java	class:MyMinHeap
-MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^public class MyMinHeap {$/;"	c	language:Java
-nedges	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public int nedges;$/;"	f	language:Java	class:GraphStart
 NERDTreeIgnore	//home/bshutt/dotfiles/files/vimrc	/^let NERDTreeIgnore=['\\.class$' ]$/;"	v	language:Vim
 NoSyntastic	//home/bshutt/dotfiles/files/vimrc	/^command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode$/;"	c	language:Vim
-nvertices	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public int nvertices;$/;"	f	language:Java	class:GraphStart
-printArray	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^  public static void printArray(String name, int[] array) {$/;"	m	language:Java	class:Driver
-printGraph	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void printGraph() {$/;"	m	language:Java	class:GraphStart
-readFile	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void readFile(String filename) throws FileNotFoundException {$/;"	m	language:Java	class:GraphStart
-removeEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void removeEdge(int x, int y) {$/;"	m	language:Java	class:GraphStart
-size	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int size;$/;"	f	language:Java	class:MyMinHeap	file:
 Snip	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Snip :vs ~\/.vim\/custom\/snippets\/<args>.snippets$/;"	c	language:Vim
 Snippets	//home/bshutt/dotfiles/files/vimrc	/^command! Snippets :vs ~\/.vim\/custom\/snippets\/.$/;"	c	language:Vim
 SpellCheck	//home/bshutt/dotfiles/files/vimrc	/^command! SpellCheck :setlocal spell spelllang=en_us$/;"	c	language:Vim
-split	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int[][] split(int[] array) {$/;"	m	language:Java	class:Inversions	file:
 Trun	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Trun VimuxRunCommand("<args>")$/;"	c	language:Vim
 w	//home/bshutt/dotfiles/files/vimrc	/^map <silent> w <Plug>CamelCaseMotion_w$/;"	m	language:Vim
 W	//home/bshutt/dotfiles/files/vimrc	/^noremap W \$$/;"	m	language:Vim
