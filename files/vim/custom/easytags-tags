@@ -139,8 +139,6 @@ GraphStart	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  Grap
 GraphStart	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^class GraphStart {$/;"	c	language:Java
 graphTask	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   private Task[] graphTask;$/;"	f	language:Java	class:WgtIntScheduler	file:
 grt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap grt :!ctags -R . <CR><CR>g<c-]>$/;"	m	language:Vim
-gs	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^  private GraphStart gs;$/;"	f	language:Java	class:BipartiteCheck	file:
-gs	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  private GraphStart gs;$/;"	f	language:Java	class:ConnectCheck	file:
 gsh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsh :leftabove vnew<CR> $/;"	m	language:Vim
 gsj	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsj :rightbelow new<CR> $/;"	m	language:Vim
 gsk	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsk :leftabove new<CR> $/;"	m	language:Vim
@@ -150,6 +148,10 @@ gtc	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtc :tabnew<CR>$/;"	m	language
 gth	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gth :tabprevious<CR>$/;"	m	language:Vim
 gtl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtl :tabnext<CR>$/;"	m	language:Vim
 gtn	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtn :tabnew<CR>$/;"	m	language:Vim
+gtsh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsh <c-w>h$/;"	m	language:Vim
+gtsj	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsj <c-w>j$/;"	m	language:Vim
+gtsk	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsk <c-w>k$/;"	m	language:Vim
+gtsl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsl <c-w>l$/;"	m	language:Vim
 gtt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtt g<c-]>$/;"	m	language:Vim
 gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^nmap gz<CR> <Plug>Zeavim$/;"	m	language:Vim
 gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^vmap gz<CR> <Plug>ZVVisSelection$/;"	m	language:Vim
@@ -213,6 +215,9 @@ RodCutter	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^  public R
 RodCutter	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^public class RodCutter {$/;"	c	language:Java
 rodLength	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^  private static int[] rodLength;$/;"	f	language:Java	class:Driver	file:
 size	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int size;$/;"	f	language:Java	class:MyMinHeap	file:
+mapleader	//home/bshutt/dotfiles/files/vimrc	/^let mapleader=","$/;"	v	language:Vim
+NERDTreeIgnore	//home/bshutt/dotfiles/files/vimrc	/^let NERDTreeIgnore=['\\.class$' ]$/;"	v	language:Vim
+NoSyntastic	//home/bshutt/dotfiles/files/vimrc	/^command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode$/;"	c	language:Vim
 Snip	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Snip :vs ~\/.vim\/custom\/snippets\/<args>.snippets$/;"	c	language:Vim
 Snippets	//home/bshutt/dotfiles/files/vimrc	/^command! Snippets :vs ~\/.vim\/custom\/snippets\/.$/;"	c	language:Vim
 sortTasksByFinishTime	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public static Task[] sortTasksByFinishTime(Task[] tasks) {$/;"	m	language:Java	class:Task
