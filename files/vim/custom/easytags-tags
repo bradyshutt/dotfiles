@@ -62,6 +62,9 @@ capacity	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private
 components	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  private int[][] components;$/;"	f	language:Java	class:ConnectCheck	file:
 ConnectCheck	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  public ConnectCheck(GraphStart gs) {$/;"	m	language:Java	class:ConnectCheck
 ConnectCheck	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^public class ConnectCheck {$/;"	c	language:Java
+Copy	//home/bshutt/dotfiles/files/vimrc	/^command! Copy :.w !pbcopy <CR><CR>$/;"	c	language:Vim
+CopyFile	//home/bshutt/dotfiles/files/vimrc	/^command! CopyFile :w !pbcopy <CR><CR>$/;"	c	language:Vim
+createTasks	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public static Task[] createTasks(int[] startTimes, int[] endTimes, int[] values) {$/;"	m	language:Java	class:Task
 data	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int[] data; $/;"	f	language:Java	class:MyMinHeap	file:
 DEFAULT_CAPACITY	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int DEFAULT_CAPACITY = 50;$/;"	f	language:Java	class:MyMinHeap	file:
 degree	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public int degree[] = new int [MAXV+1];$/;"	f	language:Java	class:GraphStart
@@ -73,10 +76,13 @@ driftUp	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public v
 driftup	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public void driftup(int index) {$/;"	m	language:Java	class:MyMinHeap
 Driver	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^  public Driver() { }$/;"	m	language:Java	class:Driver
 Driver	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^public class Driver {$/;"	c	language:Java
+Driver	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/Driver.java	/^public class Driver {$/;"	c	language:Java
 Driver	/home/bshutt/school/spring2017/cpe349/lab2-2/Driver.java	/^public class Driver {$/;"	c	language:Java
 Driver	/home/bshutt/school/spring2017/cpe349/lab3-1/Driver.java	/^public class Driver {$/;"	c	language:Java
+Driver	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^public class Driver {$/;"	c	language:Java
 e	//home/bshutt/dotfiles/files/vimrc	/^map <silent> e <Plug>CamelCaseMotion_e$/;"	m	language:Vim
 edges	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public ArrayList<Integer>[] edges = new ArrayList[MAXV+1];$/;"	f	language:Java	class:GraphStart
+end	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   int end;$/;"	f	language:Java	class:Task
 findMin	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int findMin() {$/;"	m	language:Java	class:MyMinHeap
 g2M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap g2M :Man 2 <cword><CR>$/;"	m	language:Vim
 g3M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap g3M :Man 3 <cword><CR>$/;"	m	language:Vim
@@ -116,18 +122,23 @@ ge	//home/bshutt/dotfiles/files/vimrc	/^map <silent> ge <Plug>CamelCaseMotion_ge
 getComponents	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  public int[][] getComponents() {$/;"	m	language:Java	class:ConnectCheck
 getHeapCap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int getHeapCap() {$/;"	m	language:Java	class:MyMinHeap
 getHeapSize	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int getHeapSize() {$/;"	m	language:Java	class:MyMinHeap
+getOptSet	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public int[] getOptSet(int[] stime, int[] ftime, int[] weight) {$/;"	m	language:Java	class:WgtIntScheduler
+getRightmostCompatibleTaskIndex	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public static int getRightmostCompatibleTaskIndex(Task[] tasks) {$/;"	m	language:Java	class:Task
+getRightmostCompatibleTaskIndex	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public static int getRightmostCompatibleTaskIndex(Task[] tasks, int index) {$/;"	m	language:Java	class:Task
 gjb	//home/bshutt/dotfiles/files/vimrc	/^noremap gjb :InsertBothGetterSetter<CR>$/;"	m	language:Vim
 gjg	//home/bshutt/dotfiles/files/vimrc	/^noremap gjg :InsertGetterOnly<CR>$/;"	m	language:Vim
 gjs	//home/bshutt/dotfiles/files/vimrc	/^noremap gjs :InsertSetterOnly<CR>$/;"	m	language:Vim
 gM	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gM :Man <cword><CR>$/;"	m	language:Vim
 gM	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gM :Man <cword><CR>$/;"	m	language:Vim
 gm	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gm `$/;"	m	language:Vim
+gn	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gn :NERDTreeFocus<CR>$/;"	m	language:Vim
 gO	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gO :CtrlP<CR>$/;"	m	language:Vim
+graphIndex	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   int graphIndex;$/;"	f	language:Java	class:Task
+graphMax	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   private int[] graphMax;$/;"	f	language:Java	class:WgtIntScheduler	file:
 GraphStart	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  GraphStart() {$/;"	m	language:Java	class:GraphStart
 GraphStart	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^class GraphStart {$/;"	c	language:Java
+graphTask	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   private Task[] graphTask;$/;"	f	language:Java	class:WgtIntScheduler	file:
 grt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap grt :!ctags -R . <CR><CR>g<c-]>$/;"	m	language:Vim
-gs	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^  private GraphStart gs;$/;"	f	language:Java	class:BipartiteCheck	file:
-gs	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  private GraphStart gs;$/;"	f	language:Java	class:ConnectCheck	file:
 gsh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsh :leftabove vnew<CR> $/;"	m	language:Vim
 gsj	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsj :rightbelow new<CR> $/;"	m	language:Vim
 gsk	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gsk :leftabove new<CR> $/;"	m	language:Vim
@@ -137,6 +148,10 @@ gtc	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtc :tabnew<CR>$/;"	m	language
 gth	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gth :tabprevious<CR>$/;"	m	language:Vim
 gtl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtl :tabnext<CR>$/;"	m	language:Vim
 gtn	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtn :tabnew<CR>$/;"	m	language:Vim
+gtsh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsh <c-w>h$/;"	m	language:Vim
+gtsj	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsj <c-w>j$/;"	m	language:Vim
+gtsk	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsk <c-w>k$/;"	m	language:Vim
+gtsl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtsl <c-w>l$/;"	m	language:Vim
 gtt	//home/bshutt/dotfiles/files/vimrc	/^nnoremap gtt g<c-]>$/;"	m	language:Vim
 gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^nmap gz<CR> <Plug>Zeavim$/;"	m	language:Vim
 gz<CR>	//home/bshutt/dotfiles/files/vimrc	/^vmap gz<CR> <Plug>ZVVisSelection$/;"	m	language:Vim
@@ -144,6 +159,7 @@ gzZ	//home/bshutt/dotfiles/files/vimrc	/^nmap gzZ <Plug>ZVKeyDocset<c-w><c-w><c-
 gzz	//home/bshutt/dotfiles/files/vimrc	/^nmap gzz <Plug>ZVKeyDocset<CR>$/;"	m	language:Vim
 H	//home/bshutt/dotfiles/files/vimrc	/^noremap H ,$/;"	m	language:Vim
 heapSortIncreasing	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public int[] heapSortIncreasing(int[] array) {$/;"	m	language:Java	class:MyMinHeap
+id	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   int id;$/;"	f	language:Java	class:Task
 Indent	//home/bshutt/dotfiles/files/vimrc	/^command! Indent :normal myggvG=`y:delm yzz$/;"	c	language:Vim
 insert	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean insert(int element) {$/;"	m	language:Java	class:MyMinHeap
 insertEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void insertEdge(int x, int y, boolean directed) {$/;"	m	language:Java	class:GraphStart
@@ -151,6 +167,7 @@ invCounter	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions
 Inversions	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  public Inversions() {$/;"	m	language:Java	class:Inversions
 Inversions	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^public class Inversions {$/;"	c	language:Java
 isBipartite	/home/bshutt/school/spring2017/cpe349/lab2-2/BipartiteCheck.java	/^  public boolean isBipartite() {$/;"	m	language:Java	class:BipartiteCheck
+isCompatibleWith	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public boolean isCompatibleWith(Task t) {$/;"	m	language:Java	class:Task
 isConnected	/home/bshutt/school/spring2017/cpe349/lab2-2/ConnectCheck.java	/^  public boolean isConnected() {$/;"	m	language:Java	class:ConnectCheck
 isEmpty	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean isEmpty() {$/;"	m	language:Java	class:MyMinHeap
 isFull	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public boolean isFull() {$/;"	m	language:Java	class:MyMinHeap
@@ -162,34 +179,66 @@ K	//home/bshutt/dotfiles/files/vimrc	/^noremap <silent> K 5k$/;"	m	language:Vim
 L	//home/bshutt/dotfiles/files/vimrc	/^noremap L ;$/;"	m	language:Vim
 M	//home/bshutt/dotfiles/files/vimrc	/^nnoremap M J$/;"	m	language:Vim
 main	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^  public static void main(String[] args) {$/;"	m	language:Java	class:Driver
+main	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/Driver.java	/^   public static void main(String[] args) {$/;"	m	language:Java	class:Driver
 main	/home/bshutt/school/spring2017/cpe349/lab2-2/Driver.java	/^  public static void main (String[] args) {$/;"	m	language:Java	class:Driver
 main	/home/bshutt/school/spring2017/cpe349/lab3-1/Driver.java	/^  public static void main(String[] args) {$/;"	m	language:Java	class:Driver
 main	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^  public static void main(String[] args) throws FileNotFoundException {   $/;"	m	language:Java	class:MaxSumContig
+main	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^  public static void main(String[] args) {$/;"	m	language:Java	class:Driver
 mapleader	//home/bshutt/dotfiles/files/vimrc	/^let mapleader=","$/;"	v	language:Vim
+MAX	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^  private int MAX(int[] values) {$/;"	m	language:Java	class:RodCutter	file:
 MAXDEGREE	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXDEGREE = 50;$/;"	f	language:Java	class:GraphStart
 MaxSumContig	/home/bshutt/school/spring2017/cpe349/lab4-2/MaxSumContig.java	/^public class MaxSumContig  {     $/;"	c	language:Java
+maxTotalSalePrice	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^  public int maxTotalSalePrice(int[] rod) {$/;"	m	language:Java	class:RodCutter
 MAXV	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  static final int MAXV = 100;$/;"	f	language:Java	class:GraphStart
 mergeCount	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int mergeCount(int[] left, int[] right, int[] res) {$/;"	m	language:Java	class:Inversions	file:
+mergeTasks	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   private static Task[] mergeTasks(Task[] left, Task[] right) {$/;"	m	language:Java	class:Task	file:
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap() {$/;"	m	language:Java	class:MyMinHeap
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  public MyMinHeap(int capacity) {$/;"	m	language:Java	class:MyMinHeap
 MyMinHeap	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^public class MyMinHeap {$/;"	c	language:Java
 nedges	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public int nedges;$/;"	f	language:Java	class:GraphStart
 NERDTreeIgnore	//home/bshutt/dotfiles/files/vimrc	/^let NERDTreeIgnore=['\\.class$' ]$/;"	v	language:Vim
 NoSyntastic	//home/bshutt/dotfiles/files/vimrc	/^command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode$/;"	c	language:Vim
+numTests	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^  private static int numTests;$/;"	f	language:Java	class:Driver	file:
 nvertices	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  public int nvertices;$/;"	f	language:Java	class:GraphStart
+print	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public void print() {$/;"	m	language:Java	class:Task
 printArray	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Driver.java	/^  public static void printArray(String name, int[] array) {$/;"	m	language:Java	class:Driver
+printArray	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^  public static void printArray(String name, int[] arr) {$/;"	m	language:Java	class:Driver
+printArray	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^  private void printArray(int[] arr) {$/;"	m	language:Java	class:RodCutter	file:
+printArray	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^  private void printArray(String name, int[] arr) {$/;"	m	language:Java	class:RodCutter	file:
+printGraph	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   private void printGraph() {$/;"	m	language:Java	class:WgtIntScheduler	file:
 printGraph	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void printGraph() {$/;"	m	language:Java	class:GraphStart
 readFile	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void readFile(String filename) throws FileNotFoundException {$/;"	m	language:Java	class:GraphStart
+readFile	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^  public static void readFile(String filename) {$/;"	m	language:Java	class:Driver
 removeEdge	/home/bshutt/school/spring2017/cpe349/lab2-2/GraphStart.java	/^  void removeEdge(int x, int y) {$/;"	m	language:Java	class:GraphStart
+resetTaskIDs	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public static void resetTaskIDs(Task[] tasks) {$/;"	m	language:Java	class:Task
+RodCutter	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^  public RodCutter() {$/;"	m	language:Java	class:RodCutter
+RodCutter	/home/bshutt/school/spring2017/cpe349/lab6/RodCutter.java	/^public class RodCutter {$/;"	c	language:Java
+rodLength	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^  private static int[] rodLength;$/;"	f	language:Java	class:Driver	file:
 size	/home/bshutt/school/spring2017/cpe349/lab3-1/MyMinHeap.java	/^  private int size;$/;"	f	language:Java	class:MyMinHeap	file:
+mapleader	//home/bshutt/dotfiles/files/vimrc	/^let mapleader=","$/;"	v	language:Vim
+NERDTreeIgnore	//home/bshutt/dotfiles/files/vimrc	/^let NERDTreeIgnore=['\\.class$' ]$/;"	v	language:Vim
+NoSyntastic	//home/bshutt/dotfiles/files/vimrc	/^command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode$/;"	c	language:Vim
 Snip	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Snip :vs ~\/.vim\/custom\/snippets\/<args>.snippets$/;"	c	language:Vim
 Snippets	//home/bshutt/dotfiles/files/vimrc	/^command! Snippets :vs ~\/.vim\/custom\/snippets\/.$/;"	c	language:Vim
+sortTasksByFinishTime	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public static Task[] sortTasksByFinishTime(Task[] tasks) {$/;"	m	language:Java	class:Task
 SpellCheck	//home/bshutt/dotfiles/files/vimrc	/^command! SpellCheck :setlocal spell spelllang=en_us$/;"	c	language:Vim
 split	/home/bshutt/school/spring2017/cpe349/assignment4-counting-inversions/Inversions.java	/^  private int[][] split(int[] array) {$/;"	m	language:Java	class:Inversions	file:
+start	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   int start;$/;"	f	language:Java	class:Task
+Task	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public Task(int id, int start, int end, int value) {$/;"	m	language:Java	class:Task
+Task	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^class Task {$/;"	c	language:Java
+Task	/home/bshutt/tmp/overload.js	/^function Task(name, value) {$/;"	c	language:JavaScript
+Task.toString	/home/bshutt/tmp/overload.js	/^Task.prototype.toString = function() {$/;"	m	language:JavaScript
+Task.valueOf	/home/bshutt/tmp/overload.js	/^Task.prototype.valueOf = function() {$/;"	m	language:JavaScript
+testRods	/home/bshutt/school/spring2017/cpe349/lab6/Driver.java	/^  private static int[][] testRods;$/;"	f	language:Java	class:Driver	file:
+toString	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public String toString() {$/;"	m	language:Java	class:Task
+TotalValueWeighted	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   private int TotalValueWeighted(Task[] tasks) {$/;"	m	language:Java	class:WgtIntScheduler	file:
 Trun	//home/bshutt/dotfiles/files/vimrc	/^command! -nargs=1 Trun VimuxRunCommand("<args>")$/;"	c	language:Vim
+value	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   int value;$/;"	f	language:Java	class:Task
 w	//home/bshutt/dotfiles/files/vimrc	/^map <silent> w <Plug>CamelCaseMotion_w$/;"	m	language:Vim
 W	//home/bshutt/dotfiles/files/vimrc	/^noremap W \$$/;"	m	language:Vim
 w!!	//home/bshutt/dotfiles/files/vimrc	/^cmap w!! w !sudo tee > \/dev\/null %$/;"	m	language:Vim
+WgtIntScheduler	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^   public WgtIntScheduler() {$/;"	m	language:Java	class:WgtIntScheduler
+WgtIntScheduler	/home/bshutt/school/spring2017/cpe349/assignment6-weighted-interval-scheduling/WgtIntScheduler.java	/^public class WgtIntScheduler {$/;"	c	language:Java
 zh	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zh 14zh$/;"	m	language:Vim
 zl	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zl 14zl$/;"	m	language:Vim
 zo	//home/bshutt/dotfiles/files/vimrc	/^nnoremap zo zO$/;"	m	language:Vim

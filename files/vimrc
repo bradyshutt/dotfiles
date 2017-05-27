@@ -358,6 +358,10 @@ nnoremap <silent> <c-h> :TmuxNavigateLeft<CR>
 nnoremap <silent> <c-j> :TmuxNavigateDown<CR>
 nnoremap <silent> <c-k> :TmuxNavigateUp<CR>
 nnoremap <silent> <c-l> :TmuxNavigateRight<CR>
+nnoremap gtsl <c-w>l
+nnoremap gtsh <c-w>h
+nnoremap gtsk <c-w>k
+nnoremap gtsj <c-w>j
 "nnoremap <silent> <c-\> :TmuxNavigatePrevious<CR>
 
 
