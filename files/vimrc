@@ -57,7 +57,6 @@ filetype plugin indent on
 runtime ftplugin/man.vim
 syntax on
 
-
 let g:pymode_python = 'python3'
 " Commands
 command! NoSyntastic SyntasticReset | lclose | SyntasticToggleMode
@@ -78,13 +77,20 @@ autocmd BufRead,BufNewFile *.mst set filetype=html
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.tex PencilSoft
-autocmd BufRead,BufNewFile *.tex set synmaxcol=1060
+"autocmd BufRead,BufNewFile *.tex set synmaxcol=1060
 autocmd BufRead,BufNewFile *.java set tabstop=3
 autocmd BufRead,BufNewFile *.java set shiftwidth=3
 
 
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 "autocmd BufRead,BufNewFile *.less set filetype=css
+
+" Uncomment the following to have Vim jump to the last position when reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+
 
 set clipboard=unnamed
 
@@ -99,7 +105,7 @@ set listchars=eol:-
 set splitbelow
 set splitright
 set nowrap
-set synmaxcol=160
+"set synmaxcol=160
 let g:indentLine_char='.'
 colorscheme main
 set colorcolumn=81
@@ -288,8 +294,8 @@ nnoremap B ^
 "map <Leader>w <Plug>(easymotion-w)
 "map <Leader>b <Plug>(easymotion-b)
 "map <Leader>s <Plug>(easymotion-s)
-map <Leader>f <Plug>(easymotion-sn)
-map <Leader>/ <Plug>(easymotion-overwin-f2)
+map <Leader>/ <Plug>(easymotion-sn)
+map <Leader>f <Plug>(easymotion-overwin-f2)
 "map n <Plug>(easymotion-next)
 "sunmap n
 "map N <Plug>(easymotion-prev)
@@ -397,9 +403,8 @@ nnoremap zh 14zh
 
 let g:notes_directories = ['~/dotfiles/files/vim/custom/notes']
 
+
 "nnoremap % v%
-"set showmatch
-"set matchtime=3
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
